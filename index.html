@@ -204,7 +204,16 @@
 
   	<section class="modal modal-write">
   		<h2 class="visually-hidden">Напишите нам</h2>
-  		<!-- здесь будет форма -->
+  		<a href="#" class="close-btn">close</a>
+  		<form class="write-us" method="post" action="">
+  			<label for="form-name">Ваше имя:</label>
+  			<input type="text" name="name" id="form-name" placeholder="Имя Фамилия">
+  			<label for="form-email">Ваш e-mail:</label>
+  			<input type="text" name="email" id="form-email" placeholder="email@example.com">
+  			<label for="form-comment">Текст письма:</label>
+  			<textarea name="comment" id="form-comment" rows="5" cols="40">в свободной форме</textarea>
+  		</form>
+  		<a href="#" class="form-btn">Отправить</a>
   	</section>
 
   </body>
