@@ -50,55 +50,65 @@
 			<h1 class="catalog-heading">перфораторы</h1>
 			<section class="catalog">
 				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
-					<h3 class="filter-title">фильтр:</h3>
-					<b class="filter-text">цена</b>
-					<div class="range-form">
-						<div class="range">
-              <div class="range-scale">
-                <div class="range-active-scale"></div>
-              </div>
-							<button type="button" class="toddler"></button>
-							<button type="button" class="toddler"></button>
-						</div>
-            <div class="filter-output">
-						  <input type="text" name="output-min" value="0">
-						  <p class="output-line">-</p>
-						  <input type="text" name="output-max" value="30000">
-            </div>
-					</div>
-					<ul class="filter-manufacturers">
-						<li class="filter-options">
-							<input class="visually-hidden" type="checkbox" name="bosch" id="manufacturers-bosh" checked>
-							<label for="manufacturers-bosh">bosch</label>
-						</li>
-						<li class="filter-options">
-							<input class="visually-hidden" type="checkbox" name="interskol" id="manufacturers-interskol">
-					  	<label for="manufacturers-interskol">интерскол</label>
-					  </li>
-						<li class="filter-options">
-							<input class="visually-hidden" type="checkbox" name="makita" id="manufacturers-makita" checked>
-					  	<label for="manufacturers-makita">makita</label>
-					  </li>
-						<li class="filter-options">
-							<input class="visually-hidden" type="checkbox" name="dewalt" id="manufacturers-dewalt">
-							<label for="manufacturers-dewalt">dewalt</label>
-						</li>
-						<li class="filter-options">
-							<input class="visually-hidden" type="checkbox" name="hitachi" id="manufacturers-hitachi">
-							<label for="manufacturers-hitachi">hitachi</label>
-						</li>
-					</ul>
-					<ul class="filter-battery">
-						<li class="filter-options">
-							<input class="visually-hidden" type="radio" name="battarey" value="accumulator" id="filter-accumulator" checked>
-							<label for="filter-accumulator">аккумуляторные</label>
-						</li>
-						<li class="filter-options">
-							<input class="visually-hidden" type="radio" name="battarey" value="networked" id="filter-networked">
-							<label for="filter-networked">сетевые</label>
-						</li>
-					</ul>
-					<button type="submit" name="filter-btn">показать</button>
+					<fieldset class="filter-group">
+						<legend class="filter-header">фильтр:</legend>
+					</fieldset>
+					<fieldset>
+						<legend class="filter-title">цена</legend>
+							<div class="range-form">
+								<div class="range">
+									<div class="range-scale">
+										<div class="range-active-scale"></div>
+									</div>
+									<button type="button" class="toddler"></button>
+									<button type="button" class="toddler"></button>
+								</div>
+							<div class="filter-output">
+								 	<input type="text" name="output-min" value="0">
+									<p class="output-line">-</p>
+									<input type="text" name="output-max" value="30000">
+							</div>
+							</div>
+					</fieldset>
+					<fieldset class="filter-group">
+						<legend class="filter-title">производители</legend>
+						<ul class="filter-manufacturers">
+							<li class="filter-options">
+								<input class="visually-hidden" type="checkbox" name="bosch" id="manufacturers-bosh" checked>
+								<label for="manufacturers-bosh">bosch</label>
+							</li>
+							<li class="filter-options">
+								<input class="visually-hidden" type="checkbox" name="interskol" id="manufacturers-interskol">
+								<label for="manufacturers-interskol">интерскол</label>
+							</li>
+							<li class="filter-options">
+								<input class="visually-hidden" type="checkbox" name="makita" id="manufacturers-makita" checked>
+								<label for="manufacturers-makita">makita</label>
+							</li>
+							<li class="filter-options">
+								<input class="visually-hidden" type="checkbox" name="dewalt" id="manufacturers-dewalt">
+								<label for="manufacturers-dewalt">dewalt</label>
+							</li>
+							<li class="filter-options">
+								<input class="visually-hidden" type="checkbox" name="hitachi" id="manufacturers-hitachi">
+								<label for="manufacturers-hitachi">hitachi</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="filter-group">
+						<legend class="filter-title">питание</legend>
+						<ul class="filter-battery">
+							<li class="filter-options">
+								<input class="visually-hidden" type="radio" name="battarey" value="accumulator" id="filter-accumulator" checked>
+								<label for="filter-accumulator">аккумуляторные</label>
+							</li>
+							<li class="filter-options">
+								<input class="visually-hidden" type="radio" name="battarey" value="networked" id="filter-networked">
+								<label for="filter-networked">сетевые</label>
+							</li>
+						</ul>
+						<button type="submit" name="filter-btn">показать</button>
+					</fieldset>
 				</form>
 				<div class="catalog-box">
 					<div class="sorting">
