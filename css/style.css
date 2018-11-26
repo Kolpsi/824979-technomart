@@ -5,4 +5,139 @@ body	{
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
+	font-weight: 400;
+	background-color: #ffffff;
+
+}
+
+a	{
+	text-decoration: none;
+	color: #ffffff;
+	text-align: center;
+}
+
+.main-menu	{
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #293449;
+}
+
+.main-menu .logo 	{
+	font-weight: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	background-color: #ee3643;
+	text-align: center;
+}
+
+.main-menu .logo:hover,
+.main-menu .logo:focus	{
+	background-color: #ca2c37;
+	color: #ffffff;
+}
+
+.main-menu	.logo:active	{
+	background-color: #ba2732;
+	color: #ffffff;
+}
+
+.main-menu input[type="search"]	{
+	font:inherit;
+	background-color: #293449;
+	border: 0px;
+}
+
+.main-menu	input::placeholder	{
+	color: #ffffff;
+}
+
+.main-menu	input:focus	{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.main-menu input:hover	{
+	background-color: #212a3a;
+}
+
+.main-menu a:hover,
+.main-menu a:focus	{
+	background-color: #212a3a;
+}
+
+.main-menu a:active	{
+	background-color: #161d29;
+}
+
+.main-checkout	{
+	background-color: #63a63e;
+	color: #ffffff;
+}
+
+.main-menu	a:nth-of-type(4):hover,
+.main-menu	a:nth-of-type(4):focus	{
+	background-color: #5fbb2d;
+}
+
+.main-menu	a:nth-of-type(4):active	{
+	background-color: #518534;
+}
+
+.heading-row	{
+	background-color: #f3f7f9;
+}
+
+.heading	{
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+	background-color: #f3f7f9;
+	text-align: left;
+}
+
+.phone	{
+	font-size: 21px;
+	line-height: 21px;
+	background-color: #f3f7f9;
+	color: #ee3643;
+	border: 2px solid #ffffff;
+}
+
+.direction	{
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.user-navigation a 	{
+	font-size: 21px;
+	line-height: 21px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus	{
+	color: #ee3643;
+}
+
+.user-navigation a:active	{
+	color: rgba(0,0,0,0.3);
+}
+
+.site-navigation	{
+	font-weight: 17px;
+	line-height: 17px;
+	color: #ffffff;
+	background-color: #32425c;
+	list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus	{
+	background-color: #293449;
+}
+
+.site-navigation a:active	{
+	background-color: #1d2739;
 }
