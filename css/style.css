@@ -410,3 +410,7 @@ a	{
 	color: #ee3643;
 	text-decoration: none;
 }
+
+.modal	{
+	display: none;
+}
