@@ -23,7 +23,8 @@ a	{
 	background-color: #293449;
 }
 
-.main-menu .logo 	{
+.main-menu .logo,
+.footer-logo 	{
 	font-weight: 24px;
 	line-height: 24px;
 	color: #ffffff;
@@ -32,12 +33,15 @@ a	{
 }
 
 .main-menu .logo:hover,
-.main-menu .logo:focus	{
+.main-menu .logo:focus,
+.footer-logo:hover,
+.footer-logo:focus	{
 	background-color: #ca2c37;
 	color: #ffffff;
 }
 
-.main-menu	.logo:active	{
+.main-menu	.logo:active,
+.footer-logo:active	{
 	background-color: #ba2732;
 	color: #ffffff;
 }
@@ -126,7 +130,7 @@ a	{
 }
 
 .site-navigation	{
-	font-weight: 17px;
+	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
 	background-color: #32425c;
@@ -140,4 +144,68 @@ a	{
 
 .site-navigation a:active	{
 	background-color: #1d2739;
+}
+
+.main-footer	{
+	background-color: #32425c;
+	color:	#ffffff;
+}
+
+.footer-logo	{
+	font-size: 30px;
+	line-height: 30px;
+}
+.footer-text	{
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-navigation ul	{
+	font-size: 18px;
+	line-height: 24px;
+	list-style: none;
+}
+
+
+.navigation-list a	{
+	color:	#ffd180;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus	{
+	text-decoration: underline;
+}
+
+.footer-navigation a:active	{
+	opacity: 0.5;
+}
+
+.footer-row	{
+	background-color: #293449;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.social li	{
+	background-color: #212a3a;
+	list-style: none;
+}
+
+.social	a:hover,
+.social	a:focus,
+.social	a:active	{
+	color: #ee3643;
+}
+.feedback a	{
+	color: #ffd180;
+}
+
+.feedback a:hover,
+.feedback a:focus	{
+	text-decoration: underline;
+}
+
+.feedback a:active	{
+	color: #ee3643;
+	text-decoration: none;
 }
