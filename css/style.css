@@ -14,6 +14,11 @@ a	{
 	text-align: center;
 }
 
+.btn	{
+	font-size: 14px;
+	line-height: 18px;
+	background-color: #ee3643;
+}
 			/*header*/
 
 .main-header	{
@@ -105,13 +110,17 @@ a	{
 	line-height: 24px;
 }
 
-.about-list	{
-	font-size: 18px
-	line-height: 20px;
+.about-list li	{
 	list-style-image: url(../img/tir.png);
+	font-size: 18px;
+	line-height: 20px;
 }
 
-
+.map-text	{
+	font-family: "PT Sans", Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
 
 			/*main-catalog*/
 			/*корзина в каталоге*/
