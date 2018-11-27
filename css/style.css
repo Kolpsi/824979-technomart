@@ -1,7 +1,5 @@
 body	{
 	margin: 0;
-
-	font-family: "PT Sans", Helvetica, sans-serif;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -16,6 +14,11 @@ a	{
 	text-align: center;
 }
 
+			/*header*/
+
+.main-header	{
+	background-color: #f2f6f8 ;
+}
 .main-menu	{
 	font-size: 17px;
 	line-height: 18px;
@@ -88,6 +91,48 @@ a	{
 	background-color: #518534;
 }
 
+			/*index-about*/
+
+.about-title	{
+	font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+}
+
+.about-text	{
+	font-family: "PT Sans", Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.about-list	{
+	font-size: 18px
+	line-height: 20px;
+	list-style-image: url(../img/tir.png);
+}
+
+
+
+			/*main-catalog*/
+			/*корзина в каталоге*/
+
+.main-basket-full	{
+	background-color: #ee3643;
+}
+
+.main-menu .main-basket-full:hover,
+.main-menu .main-basket-full:focus	{
+	background-color: #ca2c37;
+	color: #ffffff;
+}
+
+.main-menu .main-basket-full:active	{
+	background-color: #ba2732;
+	color: #ffffff;
+}
+
+			/**/
+
 .heading-row	{
 	background-color: #f3f7f9;
 }
@@ -111,8 +156,38 @@ a	{
 .direction	{
 	font-size: 14px;
 	line-height: 24px;
+	color: #32425c;
 }
 
+    	 /* профиль в каталоге*/
+
+.profile	{
+	background-color: #ffffff;
+	list-style: none;
+}
+
+.profile .profile-link	{
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.profile-link:active	{
+	opacity: 0.3;
+}
+
+.user-navigation	{
+	list-style: none;
+}
+
+.main-header .navigation-catalog a	{
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	background-color: #f1f5f7;
+	text-decoration: underline;
+}
+			/**/
 .user-navigation a 	{
 	font-size: 21px;
 	line-height: 21px;
@@ -128,6 +203,7 @@ a	{
 .user-navigation a:active	{
 	color: rgba(0,0,0,0.3);
 }
+
 
 .site-navigation	{
 	font-size: 17px;
@@ -145,6 +221,122 @@ a	{
 .site-navigation a:active	{
 	background-color: #1d2739;
 }
+
+			/*container-catalog*/
+
+.container	{
+	background-color: #ffffff;
+}
+
+.breadcrumbs li	{
+	font-family: "PT Sans", Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	list-style: none;
+}
+
+.breadcrumbs a	{
+	color: #000000;
+}
+
+			/*catalog filter*/
+
+.filter	{
+	font-family: "PT Sans", Helvetica, sans-serif;
+}
+
+.filter-heading	{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.filter-title	{
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 30px;
+}
+
+.filter-manufacturers,
+.filter-battery	{
+	list-style: none;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.filter-btn	{
+	font-size: 13px;
+	line-height: 18px;
+	background-color: #ffffff;
+	border: solid 1px #e5e5e5;
+	text-align: center;
+}
+		 /*catalog item*/
+
+.catalog-heading	{
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+	background-color: #f2f6f8;
+}
+
+.catalog-list	{
+	font-family: "PT Sans", Helvetica, sans-serif;
+	font-weight: 700;
+	list-style: none;
+}
+
+.item-tile	{
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.old-price	{
+	font-size: 17px;
+	line-height: 18px;
+	color: #999999;
+}
+
+.price-btn	{
+	font-size: 18px;
+	line-height: 20px;
+	background-color: #ee3643;
+}
+
+.item-active	{
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.buy-btn	{
+	background-color: #63a63e;
+	color: #ffffff;
+}
+
+.item-bookmarks	{
+	background-color: #ffffff;
+	color: #32425c;
+	border: solid 3px #63a63e;
+}
+
+.item-bookmarks:hover,
+.item-bookmarks:focus	{
+	border: solid 3px #32425c;
+}
+
+.item-bookmarks:active	{
+	opacity: 0.3;
+}
+
+.buy-btn:hover,
+.buy-btn:focus	{
+	background-color: #5fbb2d;
+}
+
+.buy-btn:active	{
+	background-color: #518534;
+}
+			/*footer*/
 
 .main-footer	{
 	background-color: #32425c;

@@ -2,6 +2,8 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Каталог</title>
 	</head>
 	<body>
@@ -23,7 +25,7 @@
 				<li><a class="profile-link" href="profile.html">Равшан Джамшутович</a></li>
 				<li><a class="profile-logout" href="logout.html">Выход</a></li>
 			</ul>
-			<ul class="user-navigation">
+			<ul class="user-navigation navigation-catalog">
 				<li><a href="#">Мои заказы</a></li>
 				<li><a href="#">Личный кабинет</a></li>
 			</ul>
@@ -50,7 +52,7 @@
 			<h1 class="catalog-heading">перфораторы</h1>
 			<section class="catalog">
 				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
-					<h3 class="filter-title">фильтр:</h3>
+					<h3 class="filter-heading">фильтр:</h3>
 					<fieldset>
 						<legend class="filter-title">цена</legend>
 							<div class="range-form">
@@ -105,7 +107,7 @@
 								<label for="filter-networked">сетевые</label>
 							</li>
 						</ul>
-						<button type="submit" name="filter-btn">показать</button>
+						<button class="filter-btn" type="submit" name="filter-btn">показать</button>
 					</fieldset>
 				</form>
 				<div class="catalog-box">
