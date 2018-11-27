@@ -19,6 +19,15 @@ a	{
 	line-height: 18px;
 	background-color: #ee3643;
 }
+
+.btn:hover,
+.btn:focus	{
+	background-color: #ca2c37;
+}
+
+.btn:active	{
+	background-color: #ba2732;
+}
 			/*header*/
 
 .main-header	{
@@ -310,6 +319,15 @@ a	{
 	font-size: 18px;
 	line-height: 20px;
 	background-color: #ee3643;
+}
+
+.price-btn:hover,
+.price-btn:focus	{
+	background-color: #ca2c37;
+}
+
+.price-btn:active	{
+	background-color: #ba2732;
 }
 
 .item-active	{
