@@ -140,7 +140,7 @@ a	{
 	color: #ffffff;
 }
 
-			/**/
+			/*end*/
 
 .heading-row	{
 	background-color: #f3f7f9;
@@ -196,7 +196,7 @@ a	{
 	background-color: #f1f5f7;
 	text-decoration: underline;
 }
-			/**/
+			/*end*/
 .user-navigation a 	{
 	font-size: 21px;
 	line-height: 21px;
@@ -410,6 +410,8 @@ a	{
 	color: #ee3643;
 	text-decoration: none;
 }
+
+			/*end*/
 
 .modal	{
 	display: none;
