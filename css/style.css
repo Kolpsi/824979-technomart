@@ -9,8 +9,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #ffffff;
-	text-align: center;
+	color: inherit;
 }
 
 .btn {
@@ -150,7 +149,6 @@ a {
 	line-height: 23px;
 	color: #ee3643;
 	background-color: #f3f7f9;
-	text-align: left;
 	font-style: italic;
 }
 
@@ -192,7 +190,6 @@ a {
 	font-size: 16px;
 	line-height: 18px;
 	color: #32425c;
-	background-color: #f1f5f7;
 	text-decoration: underline;
 }
 
@@ -200,7 +197,6 @@ a {
 .user-navigation a {
 	font-size: 21px;
 	line-height: 21px;
-	background-color: #ffffff;
 	color: #000000;
 }
 
