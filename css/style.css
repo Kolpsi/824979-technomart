@@ -40,16 +40,16 @@ a {
 	background-color: #293449;
 }
 
-.main-menu .logo-img:hover,
-.main-menu .logo-img:focus,
-.footer-logo-img:hover,
-.footer-logo-img:focus {
+.main-menu .logo-img[href]:hover,
+.main-menu .logo-img[href]:focus,
+.footer-logo-img[href]:hover,
+.footer-logo-img[href]:focus {
 	background-color: #ca2c37;
 	color: #ffffff;
 }
 
-.main-menu	.logo:active,
-.footer-logo:active {
+.main-menu	.logo[href]:active,
+.footer-logo[href]:active {
 	background-color: #ba2732;
 	color: #ffffff;
 }
