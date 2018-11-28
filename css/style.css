@@ -38,14 +38,6 @@ a {
 	background-color: #293449;
 }
 
-.main-menu .logo, .footer-logo {
-	font-weight: 24px;
-	line-height: 24px;
-	color: #ffffff;
-	background-color: #ee3643;
-	text-align: center;
-}
-
 .main-menu .logo:hover, .main-menu .logo:focus, .footer-logo:hover, .footer-logo:focus {
 	background-color: #ca2c37;
 	color: #ffffff;
@@ -110,9 +102,9 @@ a {
 }
 
 .about-list li {
-	list-style-image: url(../img/tir.png);
 	font-size: 18px;
 	line-height: 20px;
+	text-align: center;
 }
 
 .map-text {
