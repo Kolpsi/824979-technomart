@@ -40,10 +40,17 @@ a {
 	background-color: #293449;
 }
 
-.main-menu .logo-img[href]:hover,
-.main-menu .logo-img[href]:focus,
-.footer-logo-img[href]:hover,
-.footer-logo-img[href]:focus {
+.main-menu .logo, .footer-logo {
+	font-weight: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.main-menu .logo[href]:hover,
+.main-menu .logo[href]:focus,
+.footer-logo[href]:hover,
+.footer-logo[href]:focus {
 	background-color: #ca2c37;
 	color: #ffffff;
 }
@@ -73,12 +80,12 @@ a {
 	background-color: #212a3a;
 }
 
-.main-menu a:hover,
-.main-menu a:focus {
+.main-menu a[href]:hover,
+.main-menu a[href]:focus {
 	background-color: #212a3a;
 }
 
-.main-menu a:active {
+.main-menu a[href]:active {
 	background-color: #161d29;
 }
 
@@ -87,12 +94,12 @@ a {
 	color: #ffffff;
 }
 
-.main-menu	a:nth-of-type(4):hover,
-.main-menu	a:nth-of-type(4):focus {
+.main-menu	a[href]:nth-of-type(4):hover,
+.main-menu	a[href]:nth-of-type(4):focus {
 	background-color: #5fbb2d;
 }
 
-.main-menu	a:nth-of-type(4):active {
+.main-menu	a[href]:nth-of-type(4):active {
 	background-color: #518534;
 }
 
@@ -201,12 +208,12 @@ a {
 	color: #000000;
 }
 
-.user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a[href]:hover,
+.user-navigation a[href]:focus {
 	color: #ee3643;
 }
 
-.user-navigation a:active {
+.user-navigation a[href]:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -218,12 +225,12 @@ a {
 	list-style: none;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus {
 	background-color: #293449;
 }
 
-.site-navigation a:active {
+.site-navigation a[href]:active {
 	background-color: #1d2739;
 }
 
@@ -377,12 +384,12 @@ a {
 	color: #ffd180;
 }
 
-.footer-navigation a:hover,
-.footer-navigation a:focus {
+.footer-navigation a[href]:hover,
+.footer-navigation a[href]:focus {
 	text-decoration: underline;
 }
 
-.footer-navigation a:active {
+.footer-navigation a[href]:active {
 	opacity: 0.5;
 }
 
@@ -397,9 +404,9 @@ a {
 	list-style: none;
 }
 
-.social	a:hover,
-.social	a:focus,
-.social	a:active {
+.social	a[href]:hover,
+.social	a[href]:focus,
+.social	a[href]:active {
 	color: #ee3643;
 }
 
@@ -407,12 +414,12 @@ a {
 	color: #ffd180;
 }
 
-.feedback a:hover,
-.feedback a:focus {
+.feedback a[href]:hover,
+.feedback a[href]:focus {
 	text-decoration: underline;
 }
 
-.feedback a:active {
+.feedback a[href]:active {
 	color: #ee3643;
 	text-decoration: none;
 }
