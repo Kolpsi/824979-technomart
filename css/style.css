@@ -19,7 +19,8 @@ a {
 	color: #ffffff;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
 	background-color: #ca2c37;
 }
 
@@ -39,12 +40,16 @@ a {
 	background-color: #293449;
 }
 
-.main-menu .logo:hover, .main-menu .logo:focus, .footer-logo:hover, .footer-logo:focus {
+.main-menu .logo-img:hover,
+.main-menu .logo-img:focus,
+.footer-logo-img:hover,
+.footer-logo-img:focus {
 	background-color: #ca2c37;
 	color: #ffffff;
 }
 
-.main-menu	.logo:active, .footer-logo:active {
+.main-menu	.logo:active,
+.footer-logo:active {
 	background-color: #ba2732;
 	color: #ffffff;
 }
@@ -68,7 +73,8 @@ a {
 	background-color: #212a3a;
 }
 
-.main-menu a:hover, .main-menu a:focus {
+.main-menu a:hover,
+.main-menu a:focus {
 	background-color: #212a3a;
 }
 
@@ -81,7 +87,8 @@ a {
 	color: #ffffff;
 }
 
-.main-menu	a:nth-of-type(4):hover, .main-menu	a:nth-of-type(4):focus {
+.main-menu	a:nth-of-type(4):hover,
+.main-menu	a:nth-of-type(4):focus {
 	background-color: #5fbb2d;
 }
 
@@ -122,7 +129,8 @@ a {
 	background-color: #ee3643;
 }
 
-.main-menu .main-basket-full:hover, .main-menu .main-basket-full:focus {
+.main-menu .main-basket-full:hover,
+.main-menu .main-basket-full:focus {
 	background-color: #ca2c37;
 	color: #ffffff;
 }
@@ -193,7 +201,8 @@ a {
 	color: #000000;
 }
 
-.user-navigation a:hover, .user-navigation a:focus {
+.user-navigation a:hover,
+.user-navigation a:focus {
 	color: #ee3643;
 }
 
@@ -209,7 +218,8 @@ a {
 	list-style: none;
 }
 
-.site-navigation a:hover, .site-navigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
 	background-color: #293449;
 }
 
@@ -249,7 +259,8 @@ a {
 	line-height: 30px;
 }
 
-.filter-manufacturers, .filter-battery {
+.filter-manufacturers,
+.filter-battery {
 	list-style: none;
 	font-size: 15px;
 	line-height: 20px;
@@ -296,7 +307,8 @@ a {
 	color: #ffffff;
 }
 
-.price-btn:hover, .price-btn:focus {
+.price-btn:hover,
+.price-btn:focus {
 	background-color: #ca2c37;
 }
 
@@ -320,7 +332,8 @@ a {
 	border: solid 3px #63a63e;
 }
 
-.item-bookmarks:hover, .item-bookmarks:focus {
+.item-bookmarks:hover,
+.item-bookmarks:focus {
 	border: solid 3px #32425c;
 }
 
@@ -328,7 +341,8 @@ a {
 	opacity: 0.3;
 }
 
-.buy-btn:hover, .buy-btn:focus {
+.buy-btn:hover,
+.buy-btn:focus {
 	background-color: #5fbb2d;
 }
 
@@ -362,7 +376,8 @@ a {
 	color: #ffd180;
 }
 
-.footer-navigation a:hover, .footer-navigation a:focus {
+.footer-navigation a:hover,
+.footer-navigation a:focus {
 	text-decoration: underline;
 }
 
@@ -381,7 +396,9 @@ a {
 	list-style: none;
 }
 
-.social	a:hover, .social	a:focus, .social	a:active {
+.social	a:hover,
+.social	a:focus,
+.social	a:active {
 	color: #ee3643;
 }
 
@@ -389,7 +406,8 @@ a {
 	color: #ffd180;
 }
 
-.feedback a:hover, .feedback a:focus {
+.feedback a:hover,
+.feedback a:focus {
 	text-decoration: underline;
 }
 
