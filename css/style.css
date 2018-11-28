@@ -16,6 +16,7 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	background-color: #ee3643;
+	color: #ffffff;
 }
 
 .btn:hover, .btn:focus {
@@ -292,6 +293,7 @@ a {
 	font-size: 18px;
 	line-height: 20px;
 	background-color: #ee3643;
+	color: #ffffff;
 }
 
 .price-btn:hover, .price-btn:focus {
