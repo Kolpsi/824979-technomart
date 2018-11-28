@@ -340,9 +340,10 @@ a {
 .service-link[href]:hover,
 .service-link[href]:focus {
 	background-color: #293449;
+	color: #ffffff;
 }
 
-.service-link:active {
+.service-link[href]:active {
 	background-color: #ffffff;
 	color: #32425c;
 }
