@@ -31,16 +31,31 @@ a {
 /*header*/
 .main-header {
 	background-color: #f2f6f8;
+	width: 100%;
 }
 
+.color {
+	background-color: #293449;
+}
+.centering {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
 .main-menu {
 	font-size: 17px;
 	line-height: 18px;
+	text-align: center;
 	color: #ffffff;
 	background-color: #293449;
+
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 46px;
 }
 
-.logo-img {
+.logo {
+	width: 220px;
 	background-color: #ee3643;
 }
 
@@ -86,9 +101,19 @@ a {
 	background-color: #161d29;
 }
 
+.main-bookmarks {
+	margin-left: auto;
+	width: 150px;
+}
+
+.main-basket {
+	width: 150px;
+}
+
 .main-checkout {
 	background-color: #63a63e;
 	color: #ffffff;
+	width: 150px;
 }
 
 .main-menu	a[href]:nth-of-type(4):hover,
