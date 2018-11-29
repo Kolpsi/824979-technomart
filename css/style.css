@@ -32,6 +32,8 @@ a {
 .main-header {
 	background-color: #f2f6f8;
 	width: 100%;
+	margin-bottom: 60px;
+	min-height: 320px;
 }
 
 .color {
@@ -42,6 +44,12 @@ a {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
 .main-menu {
 	font-size: 17px;
 	line-height: 18px;
@@ -142,16 +150,22 @@ a {
 }
 
 /*end*/
-.heading-row {
-	background-color: #f3f7f9;
-}
 
+.header-row {
+	margin-bottom: 44px;
+}
 .heading {
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
 	background-color: #f3f7f9;
 	font-style: italic;
+
+	width: 200px;
+}
+
+.header-wrapper {
+	width:270px;
 }
 
 .phone {
@@ -186,6 +200,12 @@ a {
 
 .user-navigation {
 	list-style: none;
+	padding: 0px;
+	margin: 0px;
+
+	display: flex;
+	justify-content: space-between;
+	width: 280px;
 }
 
 .main-header .navigation-catalog a {
@@ -211,12 +231,21 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.main-nav {
+	background-color: #32425c;
+	margin-bottom: 60px;
+}
+
 .site-navigation {
 	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
-	background-color: #32425c;
 	list-style: none;
+	margin: 0px;
+	padding: 0px;
+
+	display: flex;
+	justify-content: space-between;
 }
 
 .site-navigation a[href]:hover,
