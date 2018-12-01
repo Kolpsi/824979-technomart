@@ -31,6 +31,7 @@ a {
 /*header*/
 .main-header {
 	background-color: #f2f6f8;
+
 	width: 100%;
 	margin-bottom: 20px;
 	min-height: 320px;
@@ -57,8 +58,10 @@ a {
 	text-align: center;
 	color: #ffffff;
 	background-color: #293449;
+
 	display: flex;
 	justify-content: space-between;
+
 	margin-bottom: 46px;
 }
 
@@ -121,6 +124,7 @@ a {
 .main-checkout {
 	background-color: #63a63e;
 	color: #ffffff;
+
 	width: 150px;
 }
 
@@ -160,6 +164,7 @@ a {
 	color: #ee3643;
 	background-color: #f3f7f9;
 	font-style: italic;
+
 	width: 200px;
 }
 
@@ -185,6 +190,7 @@ a {
 .profile {
 	background-color: #ffffff;
 	list-style: none;
+
 	margin: 0px;
 	padding: 0px;
 }
@@ -204,11 +210,15 @@ a {
 
 .user-navigation {
 	list-style: none;
+
+	width: 280px;
 	padding: 0px;
 	margin: 0px;
+
 	display: flex;
 	justify-content: space-between;
-	width: 280px;
+
+
 }
 
 .main-header .navigation-catalog a {
@@ -236,6 +246,7 @@ a {
 
 .main-nav {
 	background-color: #32425c;
+
 	margin-bottom: 60px;
 }
 
@@ -244,8 +255,10 @@ a {
 	line-height: 17px;
 	color: #ffffff;
 	list-style: none;
+
 	margin: 0px;
 	padding: 0px;
+
 	display: flex;
 	justify-content: space-between;
 }
@@ -259,44 +272,6 @@ a {
 	background-color: #1d2739;
 }
 
-/*index-about*/
-.about {
-	width: 550px;
-}
-
-.about-title {
-	font-size: 30px;
-	line-height: 30px;
-	color: #000000;
-}
-
-.about-margin {
-	margin-bottom: 85px;
-}
-
-.about-text {
-	font-family: "PT Sans", Helvetica, sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-}
-
-.about-list li {
-	font-size: 18px;
-	line-height: 20px;
-	text-align: center;
-}
-
-.map {
-	margin-left: auto;
-	display: flex;
-	flex-direction: column;
-}
-
-.map-text {
-	font-family: "PT Sans", Helvetica, sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-}
 
 /*Лист предложений*/
 .suggestion-list {
@@ -431,6 +406,46 @@ a {
 	line-height: 24px;
 }
 
+/*index-about*/
+.about {
+	width: 550px;
+}
+
+.about-title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+}
+
+.about-margin {
+	margin-bottom: 85px;
+}
+
+.about-text {
+	font-family: "PT Sans", Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.about-list li {
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.map {
+	margin-left: auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.map-text {
+	font-family: "PT Sans", Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
 /*main-catalog*/
 
 /*container-catalog*/
@@ -444,14 +459,16 @@ a {
 	text-transform: uppercase;
 	color: #32425c;
 	background-color: #f2f6f8;
+
 	margin-bottom: 20px;
 }
 
 .breadcrumbs {
-	display: flex;
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 25px;
+
+	display: flex;
 }
 
 .breadcrumbs li {
@@ -480,6 +497,7 @@ a {
 .filter-heading {
 	font-size: 13px;
 	line-height: 18px;
+s
 	margin-bottom: 20px
 }
 
@@ -516,10 +534,13 @@ a {
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
+
 	width: 700px;
+	margin-bottom: 20px;
+
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 20px;
+
 }
 
 .sorting-btn {
@@ -543,10 +564,12 @@ a {
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-weight: 700;
 	list-style: none;
+
 	width: 700px;
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 30px;
+
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -676,9 +699,12 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	list-style: none;
+
+	width: 550px;
+
 	display: flex;
 	justify-content: space-between;
-	width: 550px;
+
 }
 
 .navigation-list {
@@ -716,6 +742,7 @@ a {
 
 .footer-column3 {
 	width: 300px;
+
 	display: flex;
 	justify-content: space-between;
 }
