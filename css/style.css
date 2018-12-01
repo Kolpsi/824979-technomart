@@ -32,12 +32,11 @@ a {
 .main-header {
 	background-color: #f2f6f8;
 
-	width: 100%;
 	margin-bottom: 20px;
 	min-height: 320px;
 }
 
-.color {
+.main-header-top {
 	background-color: #293449;
 }
 
@@ -60,8 +59,10 @@ a {
 	background-color: #293449;
 
 	display: flex;
-	justify-content: space-between;
 
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
 	margin-bottom: 46px;
 }
 
@@ -88,6 +89,8 @@ a {
 	font: inherit;
 	background-color: #293449;
 	border: 0px;
+
+	width: 270px;
 }
 
 .main-menu	input::placeholder {
@@ -113,7 +116,6 @@ a {
 }
 
 .main-bookmarks {
-	margin-left: auto;
 	width: 150px;
 }
 
@@ -156,6 +158,9 @@ a {
 /*end*/
 .header-row {
 	margin-bottom: 44px;
+
+	display: flex;
+	justify-content: space-between;
 }
 
 .heading {
@@ -245,8 +250,6 @@ a {
 }
 
 .main-nav {
-	background-color: #32425c;
-
 	margin-bottom: 60px;
 }
 
@@ -255,6 +258,7 @@ a {
 	line-height: 17px;
 	color: #ffffff;
 	list-style: none;
+	background-color: #32425c;
 
 	margin: 0px;
 	padding: 0px;
@@ -411,6 +415,13 @@ a {
 	width: 550px;
 }
 
+.info {
+	margin-bottom: 85px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
 .about-title {
 	font-size: 30px;
 	line-height: 30px;
@@ -535,7 +546,6 @@ s
 	font-size: 13px;
 	line-height: 18px;
 
-	width: 700px;
 	margin-bottom: 20px;
 
 	display: flex;
@@ -565,7 +575,6 @@ s
 	font-weight: 700;
 	list-style: none;
 
-	width: 700px;
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 30px;
@@ -577,6 +586,7 @@ s
 
 .catalog-box {
 	margin-left: 20px;
+	width: 700px;
 }
 
 .list-item {
@@ -731,7 +741,6 @@ s
 }
 
 .footer-column1 {
-	s
 	width: 240px;
 }
 
