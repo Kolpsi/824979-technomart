@@ -278,9 +278,28 @@ a {
 
 
 /*Лист предложений*/
+.suggestion {
+	margin-bottom: 50px;
+}
 .suggestion-list {
 	list-style: none;
 	color: #ffffff;
+
+	margin: 0px;
+	padding: 0px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.suggestion-item {
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+.slider {
+	width: 620px;
 }
 
 .suggestion-item:nth-child(1) {
@@ -295,11 +314,11 @@ a {
 	background-color: #dc91d8;
 }
 
-.suggestion-item:nth-child(4) {
+.suggestion-item:nth-child(5) {
 	background-color: #8ed78f;
 }
 
-.suggestion-item:nth-child(5) {
+.suggestion-item:nth-child(6) {
 	background-color: #ffc047;
 }
 
@@ -361,7 +380,32 @@ a {
 	color: #32425c;
 }
 
+/*популярные производители*/
+.popular-manufacturer {
+	margin-bottom: 85px;
+}
+.manufacturer-list {
+	list-style: none;
+
+	margin: 0px;
+	padding: 0px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.manufacturer-list li {
+	width: 220px;
+}
+
 /*сервисы*/
+
+.service {
+	background-color: #f4f8f9;
+
+	margin-bottom: 80px;
+}
 .service-title {
 	font-size: 30px;
 	line-height: 30px;
@@ -379,6 +423,9 @@ a {
 	list-style: none;
 	color: #ffffff;
 	background-color: #32425c;
+
+	margin: 0px;
+	padding: 0px;
 }
 
 .service-link-active {
@@ -680,6 +727,10 @@ s
 }
 
 /*Описание*/
+.description {
+	background-color: #f2f6f8;
+	width: 100%;
+}
 .description-title {
 	font-size: 30px;
 	line-height: 30px;
