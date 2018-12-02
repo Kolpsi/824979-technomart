@@ -606,6 +606,7 @@ a {
 .catalog-box {
 	margin-left: 20px;
 	width: 700px;
+	margin-bottom: 20px;
 }
 
 .list-item {
@@ -701,7 +702,9 @@ a {
 /*Описание*/
 .description {
 	background-color: #f2f6f8;
+
 	width: 100%;
+	margin-bottom: 40px;
 }
 
 .description-title {
