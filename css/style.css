@@ -337,6 +337,11 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
+
+	display: flex;
+	justify-content: space-between;
+
+	width: 300px;
 }
 
 .profile-wrapper {
@@ -346,9 +351,35 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
+	display: block;
+
+	padding: 14px 30px 11px 47px;
+
+	position: relative;
 }
 
 .profile-link:active {
+	opacity: 0.3;
+}
+
+.profile-link:hover {
+	opacity: 0.9;
+}
+
+.profile-link::before {
+	content: "";
+
+	position: absolute;
+
+	top: 15px;
+	left: 15px;
+
+	width: 20px;
+	height: 20px;
+
+	background-image: url("../img/icon-user.svg");
+	background-repeat: no-repeat;
+
 	opacity: 0.3;
 }
 
@@ -945,13 +976,19 @@ input[type="radio"].visually-hidden {
 	color: #32425c;
 	background-color: #f2f6f8;
 	margin-bottom: 20px;
+
+	padding: 32px 0px 34px 30px;
 }
 
 .breadcrumbs {
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 25px;
+
 	display: flex;
+	justify-content: flex-start;
+
+	width: 360px;
 }
 
 .breadcrumbs li {
@@ -960,6 +997,35 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	list-style: none;
 	text-transform: uppercase;
+
+	margin-right: 45px;
+
+	position: relative;
+}
+
+.breadcrumbs li:not(:first-child)::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+
+	position: absolute;
+	top: 4px;
+	left: -20px;
+
+	background-image: url("../img/icon-right-small.svg");
+	background-repeat: no-repeat;
+}
+
+.breadcrumbs li:first-of-type::after {
+	content: "";
+
+	position: absolute;
+
+	top: 4px;
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/icon-home.svg");
+	background-repeat: no-repeat;
 }
 
 .breadcrumbs a {
