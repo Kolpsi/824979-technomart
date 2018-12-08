@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>HTML Academy: Техномарт</title>
@@ -140,7 +140,7 @@
 						</div>
 					</li>
 					<li class="list-item">
-						<img class="img-item"src="img/bosch2000.jpg" alt="Bosch BFG 2000" width="127" height="112">
+						<img class="img-item" src="img/bosch2000.jpg" alt="Bosch BFG 2000" width="127" height="112">
 						<h3 class="item-title">Перфоратор BOSCH BFG 2000</h3>
 							<a href="#" class="price-btn price-2000">12500 р.</a>
 						<div class="item-active">
@@ -275,33 +275,35 @@
 		</footer>
 
 		<section class="modal modal-write">.
-			<input type="button" id="close-btn" class="close-btn visually-hidden"><label for="close-btn"></label>
+			<input type="button" class="close-btn visually-hidden" id="close-btn" value="close"><label for="close-btn"></label>
 			<h2 class="visually-hidden">Напишите нам</h2>
 			<form class="write-us" method="post" action="https://echo.htmlacademy.ru">
 				<div class="write-wrapper">
 					<label for="form-name">Ваше имя:</label>
 					<input class="write-name" type="text" name="name" id="form-name" placeholder="Имя Фамилия">
-				 </div>
-				 <div class="write-wrapper">
+				</div>
+				<div class="write-wrapper">
 					<label for="form-email">Ваш e-mail:</label>
 					<input class="write-email" type="text" name="email" id="form-email" placeholder="email@example.com">
 				</div>
-				<div class="write-wrapper">
-					<label for="form-comment">Текст письма:</label>
-					<textarea class="write-comment" name="comment" id="form-comment" rows="5" cols="40">в свободной форме</textarea>
-					<button class="form-btn btn" type="submit">отправить</button>
+				<div class="comment-wrapper">
+					<label class="write-comment-label" for="form-comment">Текст письма:</label>
+					<textarea class="write-comment" name="comment" id="form-comment" rows="5" cols="58" placeholder="в свободной форме"></textarea>
 				</div>
 			</form>
+			<div class="modal-btn-wrapper">
+					<button class="form-btn btn" type="submit">отправить</button>
+			</div>
 		</section>
 
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
-			<button class="close-btn" type="button">close</button>
+			<input type="button" class="close-btn visually-hidden" value="close"><label for="close-btn"></label>
 			<img src="img/mapfull.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 		</section>
 
 		<section class="modal modal-add">
-			<input type="button" id="close-btn" class="close-btn visually-hidden"><label for="close-btn"></label>
+			<input type="button" class="close-btn visually-hidden" value="close"><label for="close-btn"></label>
 			<h2 class="modal-title">Товар добавлен в корзину!</h2>
 			<p class="modal-btn">
 				<a href="#" class="btn modal-buy-btn">оформить заказ</a>
