@@ -62,6 +62,7 @@ a {
 .wrapper {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .main-menu {
@@ -753,6 +754,8 @@ a {
 }
 
 /*сервисы*/
+
+
 .service {
 	background-color: #f4f8f9;
 	margin-bottom: 80px;
@@ -762,6 +765,7 @@ a {
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
+	padding-top: 60px;
 }
 
 .service-text {
@@ -771,12 +775,40 @@ a {
 	color: #000000;
 }
 
+.service {
+
+}
+
 .service-list {
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: 700;
 	list-style: none;
 	color: #ffffff;
 	background-color: #32425c;
 	margin: 0px;
 	padding: 0px;
+	margin-top: 60px;
+	position: relative;
+}
+
+.service-list::before {
+	content: "";
+	position: absolute;
+	top: -50px;
+	right: 0px;
+	width: 10px;
+	height: 280px;
+	background-image: url("../img/line.png");
+	background-repeat: no-repeat;
+}
+
+.service-link {
+	display: block;
+	box-sizing: border-box;
+	width: 240px;
+
+	padding: 15px 0px 15px 20px;
 }
 
 .service-link-active {
@@ -796,6 +828,47 @@ a {
 }
 
 /*слайдер сервиса*/
+
+.service-slider {
+	width: 620px;
+}
+
+.service-slider2,
+.service-slider3 {
+	display: none;
+}
+
+.service-slider1 {
+	min-height: 290px;
+	background-image: url("../img/delivery.png");
+	background-repeat: no-repeat;
+	background-position: 150px 15px;
+}
+
+.service-slider2 {
+	min-height: 290px;
+	background-image: url("../img/guarante.png");
+	background-repeat: no-repeat;
+	background-position: 235px 0px;
+}
+
+.service-slider3 {
+	min-height: 290px;
+	background-image: url("../img/credit.png");
+	background-repeat: no-repeat;
+	background-position: 155px 0px;
+}
+
+.slider-btn {
+	display: block;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	text-align: center;
+	width: 195px;
+	padding: 10px 0px;
+	margin-top: 30px;
+}
+
 .slider-title {
 	font-size: 36px;
 	line-height: 24px;
