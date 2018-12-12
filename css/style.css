@@ -1395,7 +1395,7 @@ a {
 
 .sorting-btn:hover,
 .sorting-btn:focus {
-	text-decoration: underline dotted #ee3643;
+	text-decoration: underline solid #ee3643;
 	opacity: 1;
 }
 
@@ -1433,7 +1433,7 @@ a {
 .catalog-box {
 	margin-left: 20px;
 	width: 700px;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 }
 
 .list-item {
@@ -1899,6 +1899,7 @@ a {
 	width: 21px;
 	height: 21px;
 	background-image: url("../img/icon-close.svg");
+	cursor: pointer;
 }
 
 .modal-map input[type="button"] + label::after {
@@ -1909,6 +1910,7 @@ a {
 	width: 21px;
 	height: 21px;
 	background-image: url("../img/icon-close.svg");
+	cursor: pointer;
 }
 
 .modal-btn {
@@ -1969,6 +1971,18 @@ a {
 	font-size: 13px;
 	line-height: 18px;
 	padding: 10px 15px;
+	border: 2px solid #d7dcde;
+}
+
+.write-us input[type="text"]:focus,
+.write-us input[type="text"]:active{
+	border: 2px solid #ee3643;
+	outline: none;
+}
+
+.write-us input[type="text"]:hover {
+	border: 2px solid #b5b5b5;
+	outline: none;
 }
 
 .write-wrapper {
@@ -1994,6 +2008,18 @@ a {
 .write-comment {
 	margin-top: 20px;
 	margin-right: 80px;
+	border: 2px solid #d7dcde;
+}
+
+.write-comment:focus,
+.write-comment:active {
+	border: 2px solid #ee3643;
+	outline: none;
+}
+
+.write-comment:hover {
+	border: 2px solid #b5b5b5;
+	outline: none;
 }
 
 .write-comment::-webkit-input-placeholder {
