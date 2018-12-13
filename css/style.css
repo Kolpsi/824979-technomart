@@ -80,6 +80,7 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
@@ -568,6 +569,7 @@ a {
 }
 
 .suggestion-item {
+	position: relative;
 	width: 300px;
 	margin-bottom: 20px;
 }
@@ -920,17 +922,17 @@ a {
 	min-height: 260px;
 }
 
-#slide1:checked ~ .service-slider1,
-#slide2:checked ~ .service-slider2,
-#slide3:checked ~ .service-slider3 {
+#slide1:checked ~ .service-slider .service-slider1,
+#slide2:checked ~ .service-slider .service-slider2,
+#slide3:checked ~ .service-slider .service-slider3 {
 	display: block;
 }
 
-#slide1:checked ~ .service-list label:nth-of-type(1),
-#slide2:checked ~ .service-list label:nth-of-type(2),
-#slide3:checked ~ .service-list label:nth-of-type(3) {
-	background-color: #293449;
-	color: #ffffff;
+#slide1:checked ~ .service-list label[for="slide1"],
+#slide2:checked ~ .service-list label[for="slide2"],
+#slide3:checked ~ .service-list label[for="slide3"] {
+	background-color: #ffffff;
+	color: #32425c;
 }
 
 .service-slider1 {
@@ -1173,6 +1175,7 @@ a {
 .filter-heading {
 	font-size: 13px;
 	line-height: 18px;
+	font-weight: 400;
 	text-transform: uppercase;
 	background-color: #f7f3ec;
 	margin: 0px;
@@ -1345,7 +1348,9 @@ a {
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
-	padding: 8px 0px;
+	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 7px;
 	margin-top: 0px;
 	margin-bottom: 20px;
 	background-color: #f7f3ec;
@@ -1379,9 +1384,9 @@ a {
 	width: 16px;
 	height: 16px;
 	margin: 5px 15px 0px 46px;
-	background-image: url("../img/icon-up-dir.svg");
+	background-image: url("../img/icon-up-dir-red.svg");
 	background-repeat: no-repeat;
-	opacity: 0.3;
+	opacity: 1;
 }
 
 .sorting-selector-2 {
@@ -1392,6 +1397,8 @@ a {
 	background-repeat: no-repeat;
 	opacity: 0.3;
 }
+
+
 
 .sorting-btn:hover,
 .sorting-btn:focus {
@@ -1410,6 +1417,12 @@ a {
 
 .sorting-selector-2:active {
 	background-image: url("../img/icon-down-dir-red.svg");
+}
+
+.sorting-btn-active {
+	color: #ee3643;
+	text-decoration: none;
+	opacity: 1;
 }
 
 /*catalog item*/
@@ -1526,6 +1539,7 @@ a {
 }
 
 .item-active {
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 }
@@ -1533,6 +1547,7 @@ a {
 .buy-btn {
 	background-color: #63a63e;
 	color: #ffffff;
+	padding: 3px;
 }
 
 .item-bookmarks {
@@ -1555,7 +1570,8 @@ a {
 .item-active .buy-btn,
 .item-active .item-bookmarks {
 	display: block;
-	width: 129px;
+	box-sizing: border-box;
+	width: 135px;
 	margin: 0 auto;
 	margin-bottom: 7px;
 	padding: 7px 0;
@@ -1593,7 +1609,8 @@ a {
 	background-color: #518534;
 }
 
-.flag-new {
+.flag-new::after {
+	content: "";
 	position: absolute;
 	top: -1px;
 	right: -1px;
@@ -1854,7 +1871,7 @@ a {
 
 /*модальные окна*/
 .modal {
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -1867,7 +1884,6 @@ a {
 .modal-add {
 	width: 620px;
 	height: 282px;
-	position: relative;
 	-webkit-box-shadow: inset  0px 5px 0 0 #ee3643;
 	box-shadow: inset  0px 5px 0 0 #ee3643;
 	background-color: #ffffff;
@@ -1948,7 +1964,6 @@ a {
 	-webkit-box-shadow: inset  0px 5px 0 0 #ee3643;
 	box-shadow: inset  0px 5px 0 0 #ee3643;
 	background-color: #ffffff;
-	position: relative;
 }
 
 .write-us {
