@@ -429,12 +429,6 @@ a {
 	list-style: none;
 }
 
-.main-header .navigation-catalog a {
-	font-size: 16px;
-	line-height: 18px;
-	color: #32425c;
-	text-decoration: underline;
-}
 
 .order {
 	position: relative;
@@ -458,6 +452,13 @@ a {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
+}
+
+.navigation-catalog a {
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;
 }
 
 .login-link {
