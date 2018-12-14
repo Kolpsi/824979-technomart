@@ -1,9 +1,9 @@
 body {
-	margin: 0;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
+	margin: 0;
 	background-color: #ffffff;
 }
 
@@ -1880,6 +1880,9 @@ a {
 	display: none;
 }
 
+.modal-map {
+	display: block;
+}
 /*форма добавления товара*/
 .modal-add {
 	width: 620px;
