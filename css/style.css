@@ -560,11 +560,15 @@ a {
 	flex-grow: 1;
 }
 
-.site-navigation li:nth-of-type(1) {
+.site-navigation li:nth-of-type(1) a {
 	padding-left: 20px;
 }
 
-.site-navigation li:nth-of-type(3) {
+.site-navigation li:nth-of-type(2) a {
+	padding-left: 3px;
+}
+
+.site-navigation li:nth-of-type(3) a {
 	padding-left: 0px;
 }
 
@@ -788,7 +792,6 @@ a {
 .slogan {
 	margin-left: 25px;
 	margin-top: 0px;
-	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -984,6 +987,7 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 240px;
+	min-height: 60px;
 	padding: 13px 0px 15px 22px;
 	cursor: pointer;
 }
@@ -1012,7 +1016,7 @@ a {
 .service-slider {
 	position: relative;
 	width: 620px;
-	min-height: 335px;
+	min-height: 343px;
 }
 
 .service-slider1,
@@ -1070,7 +1074,8 @@ a {
 }
 
 .slider-title {
-	margin-top: 25px;
+	margin-top: 27px;
+	margin-bottom: 25px;
 	padding: 0px;
 	padding-top: 27px;
 	font-size: 36px;
@@ -1104,7 +1109,7 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-bottom: 83px;
+	margin-bottom: 86px;
 }
 
 .about-title {
@@ -1116,7 +1121,7 @@ a {
 	color: #000000;
 	margin: 0px;
 	margin-bottom: 26px;
-	padding-top: 5px;
+	padding-top: 0px;
 	text-transform: uppercase;
 }
 
@@ -1132,7 +1137,7 @@ a {
 	line-height: 24px;
 	padding: 0px;
 	margin: 0px;
-	margin-bottom: 23px;
+	margin-bottom: 21px;
 }
 
 .about-list {
@@ -1172,11 +1177,11 @@ a {
 .map-btn {
 	display: block;
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	width: 300px;
 	padding: 10px 0px;
 	padding-left: 4px;
-	margin-top: 35px;
+	margin-top: 31px;
 	text-align: center;
 	text-transform: uppercase;
 	border-radius: 3px;
@@ -1920,13 +1925,14 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-top: 34px;
+	margin: 0px;
 	margin-right: 40px;
 	width: 100px;
 
 }
 
 .social li {
+	margin-top: 35px;
 	margin-right: 10px;
 	background-color: #212a3a;
 	list-style: none;
@@ -1934,9 +1940,9 @@ a {
 }
 
 .social-btn {
+	position: relative;
 	width: 42px;
 	height: 42px;
-	position: relative;
 }
 
 .social-vk::after {
