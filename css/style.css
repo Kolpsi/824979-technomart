@@ -85,6 +85,10 @@ a {
 	min-height: 320px;
 }
 
+.catalog-header {
+	margin-bottom: 20px;
+}
+
 .main-header-top {
 	background-color: #293449;
 }
