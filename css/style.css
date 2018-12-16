@@ -119,7 +119,6 @@ a {
 
 .main-menu input[type="search"] {
 	font: inherit;
-	line-height: 18px;
 	background-color: #293449;
 	border: 0px;
 	width: 270px;
@@ -171,10 +170,9 @@ a {
 }
 
 .main-bookmarks {
-	position: relative;
 	padding: 12px 0px 10px 44px;
 	width: 105px;
-
+	position: relative;
 }
 
 .main-bookmarks::before {
@@ -788,7 +786,7 @@ a {
 
 /*популярные производители*/
 .popular-manufacturer {
-	margin-bottom: 60px;
+	margin-bottom: 85px;
 }
 
 .manufacturer-list {
@@ -843,12 +841,10 @@ a {
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
-	padding-top: 65px;
-	text-transform: uppercase;
+	padding-top: 60px;
 }
 
 .service-text {
-	width: 400px;
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -887,13 +883,9 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 240px;
-	padding: 14px 0px 15px 22px;
+	padding: 15px 0px 15px 20px;
 
 	cursor: pointer;
-}
-
-.service-link:nth-child(3) {
-	padding-top: 16px;
 }
 
 .service-link-active {
@@ -916,7 +908,7 @@ a {
 .service-slider {
 	position: relative;
 	width: 620px;
-	min-height: 335px;
+	min-height: 290px;
 }
 
 .service-slider1,
@@ -927,7 +919,7 @@ a {
 	width: 620px;
 	top: 0px;
 	left: 0px;
-	min-height: 335px;
+	min-height: 260px;
 }
 
 #slide1:checked ~ .service-slider .service-slider1,
@@ -946,19 +938,19 @@ a {
 .service-slider1 {
 	background-image: url("../img/delivery.png");
 	background-repeat: no-repeat;
-	background-position: 150px 80px;
+	background-position: 150px 15px;
 }
 
 .service-slider2 {
 	background-image: url("../img/guarante.png");
 	background-repeat: no-repeat;
-	background-position: 235px 60px;
+	background-position: 235px 0px;
 }
 
 .service-slider3 {
 	background-image: url("../img/credit.png");
 	background-repeat: no-repeat;
-	background-position: 155px 80px;
+	background-position: 155px 0px;
 }
 
 .slider-btn {
@@ -976,22 +968,14 @@ a {
 	font-size: 36px;
 	line-height: 24px;
 	color: #32425c;
-	text-transform: uppercase;
-	padding-top: 30px;
 }
 
 .slider-text {
-	width: 278px;
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
-.slider-text2 {
-	width: 379px;
-}
-.slider-text3 {
-	width: 380px;
-}
+
 /*index-about*/
 .about {
 	width: 550px;
@@ -1012,8 +996,7 @@ a {
 	line-height: 30px;
 	color: #000000;
 	margin: 0px;
-	margin-bottom: 26px;
-	padding-top: 5px;
+	margin-bottom: 30px;
 	text-transform: uppercase;
 }
 
@@ -1025,15 +1008,14 @@ a {
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	padding: 0px;
 	margin: 0px;
-	margin-bottom: 23px;
+	margin-bottom: 30px;
 }
 
 .about-list {
 	margin: 0px;
 	padding: 0px;
-	padding-left: 35px;
+	padding-left: 45px;
 	list-style: none;
 }
 
@@ -1066,10 +1048,8 @@ a {
 
 .map-btn {
 	display: block;
-	box-sizing: border-box;
 	width: 300px;
 	padding: 10px 0px;
-	padding-left: 4px;
 	margin-top: 35px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1093,7 +1073,6 @@ a {
 	line-height: 24px;
 	margin: 0px;
 	margin-bottom: 30px;
-	width: 180px;
 }
 
 /*main-catalog*/
@@ -1238,7 +1217,7 @@ a {
 	left: 0;
 	width: 4px;
 	height: 4px;
-	padding: 2px;
+	padding: 0;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
 	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1712,8 +1691,7 @@ a {
 	box-sizing: border-box;
 	width: 220px;
 	height: 63px;
-	padding-top: 9px;
-	padding-left: 5px;
+	padding-top: 11px;
 }
 
 .footer-text {
@@ -1752,7 +1730,7 @@ a {
 .navigation-list a {
 	color: #ffd180;
 	margin-right: 37px;
-	margin-left: 24px;
+	margin-left: 23px;
 }
 
 .footer-navigation a[href]:hover,
@@ -1876,7 +1854,7 @@ a {
 
 .feedback a {
 	color: #ffd180;
-	margin-right: 52px;
+	margin-right: 12px;
 }
 
 .feedback a[href]:hover,
@@ -1902,6 +1880,9 @@ a {
 	display: none;
 }
 
+.modal-map {
+	display: block;
+}
 /*форма добавления товара*/
 .modal-add {
 	width: 620px;
@@ -1983,7 +1964,6 @@ a {
 	font-size: 18px;
 	line-height: 18px;
 	width: 620px;
-	min-height: 430px;
 	-webkit-box-shadow: inset  0px 5px 0 0 #ee3643;
 	box-shadow: inset  0px 5px 0 0 #ee3643;
 	background-color: #ffffff;
@@ -2079,9 +2059,6 @@ a {
 .modal-btn-wrapper {
 	width: 620px;
 	background-color: #f4f4f4;
-	position: absolute;
-	top: 335px;
-	left: 0px;
 }
 
 .form-btn {
@@ -2093,4 +2070,3 @@ a {
 }
 
 /*карта*/
-
