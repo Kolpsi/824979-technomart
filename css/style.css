@@ -1,4 +1,7 @@
 body {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -72,7 +75,7 @@ a {
 /*header*/
 .main-header {
 	background-color: #f3f7f9;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 	min-height: 320px;
 }
 
@@ -145,16 +148,12 @@ a {
 }
 
 .main-menu input[type="search"] {
-<<<<<<< HEAD
-=======
 	font: inherit;
 	line-height: 18px;
 	background-color: #293449;
->>>>>>> parent of b702ec2... Revert "11"
 	border: 0px;
 	width: 270px;
 	padding: 11px 0px 10px 48px;
-	font: inherit;
 	background-color: #293449;
 	background-image: url("../img/icon-search1.svg");
 	background-repeat: no-repeat;
@@ -206,10 +205,6 @@ a {
 	position: relative;
 	padding: 12px 0px 10px 44px;
 	width: 105px;
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of b702ec2... Revert "11"
 }
 
 .main-bookmarks::before {
@@ -435,7 +430,7 @@ a {
 	width: 280px;
 	padding: 0px;
 	margin: 0px;
-	margin-top: 3px;
+	margin-top: 0px;
 	list-style: none;
 }
 
@@ -464,6 +459,9 @@ a {
 	color: #000000;
 }
 
+.navigation-catalog {
+	margin-top: 3px;
+}
 .navigation-catalog a {
 	font-size: 16px;
 	line-height: 18px;
@@ -554,6 +552,18 @@ a {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
+}
+
+.site-navigation li:nth-of-type(1) {
+	padding-left: 20px;
+}
+
+.site-navigation li:nth-of-type(3) {
+	padding-left: 0px;
+}
+
+.site-navigation li:nth-of-type(7) a {
+	padding-right: 23px;
 }
 
 .site-navigation a {
@@ -697,8 +707,8 @@ a {
 
 .slider-control {
 	position: absolute;
-	bottom: 25px;
-	left: 290px;
+	bottom: 22px;
+	left: 295px;
 	z-index: 20;
 	font-size: 0;
 }
@@ -795,10 +805,17 @@ a {
 /*популярные товары*/
 .title {
 	margin: 0px;
-	padding: 28px 0px 30px 28px;
+	padding: 30px 0px 30px 28px;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 	color: #32425c;
+}
+
+.title-manufacturer {
+	margin-left: 0px;
+	padding-left: 25px;
+	padding-top: 28px;
 }
 
 .popular-heading {
@@ -817,9 +834,15 @@ a {
 	display: block;
 	-ms-flex-item-align: start;
 	align-self: flex-start;
-	margin-top: 27px;
+	margin-top: 25px;
 	margin-right: 24px;
 	padding: 10px 55px;
+}
+
+.manufacturer-btn {
+	box-sizing: border-box;
+	width: 253px;
+	text-align: center;
 }
 
 /*популярные производители*/
@@ -880,12 +903,10 @@ a {
 	padding-top: 60px;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 	color: #000000;
-<<<<<<< HEAD
-=======
 	padding-top: 65px;
 	text-transform: uppercase;
->>>>>>> parent of b702ec2... Revert "11"
 }
 
 .service-text {
@@ -894,9 +915,6 @@ a {
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
-}
-
-.service {
 }
 
 .service-list {
@@ -928,12 +946,7 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 240px;
-<<<<<<< HEAD
-	padding: 15px 0px 15px 20px;
-=======
-	padding: 14px 0px 15px 22px;
-
->>>>>>> parent of b702ec2... Revert "11"
+	padding: 13px 0px 15px 22px;
 	cursor: pointer;
 }
 
@@ -970,13 +983,10 @@ a {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-<<<<<<< HEAD
 	display: none;
 	width: 620px;
 	min-height: 260px;
-=======
 	min-height: 335px;
->>>>>>> parent of b702ec2... Revert "11"
 }
 
 #slide1:checked ~ .service-slider .service-slider1,
@@ -1022,11 +1032,14 @@ a {
 }
 
 .slider-title {
+	margin-top: 25px;
+	padding: 0px;
+	padding-top: 27px;
 	font-size: 36px;
-	line-height: 24px;
+	line-height: 36px;
+	font-weight: 400;
 	color: #32425c;
 	text-transform: uppercase;
-	padding-top: 30px;
 }
 
 .slider-text {
@@ -1053,7 +1066,7 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-bottom: 85px;
+	margin-bottom: 83px;
 }
 
 .about-title {
@@ -1061,13 +1074,11 @@ a {
 	margin-bottom: 30px;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 	color: #000000;
-<<<<<<< HEAD
-=======
 	margin: 0px;
 	margin-bottom: 26px;
 	padding-top: 5px;
->>>>>>> parent of b702ec2... Revert "11"
 	text-transform: uppercase;
 }
 
@@ -1081,12 +1092,9 @@ a {
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-<<<<<<< HEAD
-=======
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 23px;
->>>>>>> parent of b702ec2... Revert "11"
 }
 
 .about-list {
@@ -1152,12 +1160,9 @@ a {
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-<<<<<<< HEAD
-=======
 	margin: 0px;
 	margin-bottom: 30px;
 	width: 180px;
->>>>>>> parent of b702ec2... Revert "11"
 }
 
 /*main-catalog*/
@@ -1173,9 +1178,10 @@ a {
 
 .catalog-heading {
 	margin-bottom: 20px;
-	padding: 28px 0px 30px 30px;
+	padding: 28px 0px 30px 29px;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 	text-transform: uppercase;
 	color: #32425c;
 	background-color: #f2f6f8;
@@ -1196,18 +1202,23 @@ a {
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 22px;
-	margin-top: 20px;
+	margin-top: 21px;
 }
 
 .breadcrumbs li {
 	position: relative;
-	padding-left: 5px;
-	margin-right: 40px;
+	padding-left: 6px;
+	margin-right: 38px;
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	list-style: none;
 	text-transform: uppercase;
+}
+
+.breadcrumbs li:nth-of-type(2) {
+	margin-left: 5px;
+	margin-right: 34px;
 }
 
 .breadcrumbs li:not(:first-child)::before {
@@ -1225,7 +1236,7 @@ a {
 	content: "";
 	position: absolute;
 	top: 3px;
-	left: 0px;
+	left: -2px;
 	width: 15px;
 	height: 15px;
 	background-image: url("../img/icon-home.svg");
@@ -1259,8 +1270,8 @@ a {
 
 .filter-heading {
 	margin: 0px;
+	margin-bottom: 10px;
 	padding: 10px 0px 10px 18px;
-	margin-bottom: 11px
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
@@ -1269,13 +1280,13 @@ a {
 }
 
 .range-form {
-	margin-bottom: 25px;
+	margin-bottom: 26px;
 }
 
 .range {
 	position: relative;
 	margin-top: 15px;
-	margin-bottom: 10px;
+	margin-bottom: 9px;
 	height: 41px;
 	padding-top: 39px;
 	padding-left: 20px;
@@ -1298,7 +1309,7 @@ a {
 
 .toddler {
 	position: absolute;
-	top: 31px;
+	top: 30px;
 	left: 0;
 	width: 4px;
 	height: 4px;
@@ -1344,17 +1355,20 @@ a {
 .filter-title {
 	width: 220px;
 	padding: 0px;
-	padding-top: 16px;
+	padding-top: 14px;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 30px;
 	text-transform: uppercase;
 	border-top: solid 1px #e2e2e2;
+}
 
+.title-battery {
+	padding-top: 20px;
 }
 
 .filter-output input[type="text"] {
-	padding: 9px 2px;
+	padding: 10px 3px;
 	width: 90px;
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 17px;
@@ -1367,17 +1381,22 @@ a {
 .filter-manufacturers,
 .filter-battery {
 	padding-left: 33px;
+	margin-top: 13px;
 	list-style: none;
 	font-size: 15px;
 	line-height: 20px;
 }
 
 .filter-btn {
+	width: 140px;
+	padding: 9px 0px;
+	margin-top: 59px;
 	font-size: 13px;
 	line-height: 18px;
 	background-color: #ffffff;
 	border: solid 1px #e5e5e5;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .filter-options {
@@ -1394,7 +1413,7 @@ a {
 	content: "";
 	position: absolute;
 	top: -2px;
-	left: -36px;
+	left: -34px;
 	width: 25px;
 	height: 25px;
 	background-image: url("../img/checkbox-off.svg");
@@ -1422,12 +1441,7 @@ a {
 	background-repeat: no-repeat;
 }
 
-.filter-btn {
-	width: 140px;
-	padding: 9px 0px;
-	margin-top: 60px;
-	text-transform: uppercase;
-}
+
 
 /*сортировка в каталоге*/
 .sorting {
@@ -1563,29 +1577,38 @@ a {
 	width: 160px;
 	min-height: 40px;
 	padding: 0 25px;
-	margin-top: 40px;
+	margin-top: 37px;
 	margin-bottom: 0px;
 	font-size: 18px;
 	line-height: 20px;
 }
 
+.item-title-9000 {
+	margin-top: 10px;
+}
+
+.img-item-9000 {
+	margin-top: 5px;
+}
+
 .old-price {
 	font-size: 17px;
 	line-height: 18px;
-	color: #999999;
+	color: #a9a9a9;
 	text-transform: uppercase;
 	min-height: 20px;
-	margin: 10px 0px 9px 3px;
+	margin: 12px 0px 7px 3px;
 }
 
 .price-btn {
 	position: relative;
 	width: 80px;
-	padding: 9px 30px;
-	margin-bottom: 21px;
+	padding: 10px 30px;
+	margin-top: 1px;
+	margin-bottom: 19px;
 	margin-left: 5px;
-	font-size: 18px;
-	line-height: 20px;
+	font-size: 17px;
+	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
 	background: #ee3643;
@@ -1720,10 +1743,9 @@ a {
 	display: inline-block;
 	border: 1px solid #e5e5e5;
 	width: 36px;
-	height: 36px;
-	margin: 30px 7px 15px 0px;
+	margin: 30px 7px 22px 0px;
 	text-align: center;
-	line-height: 36px;
+	padding: 10px 0px;
 	text-transform: uppercase;
 	border-radius: 5px;
 }
@@ -1735,6 +1757,7 @@ a {
 .paginator .paginator-active {
 	background-color: #ee3643;
 	color: #ffffff;
+	width: 36px;
 }
 
 .paginator-btn:hover,
@@ -1754,14 +1777,15 @@ a {
 }
 
 .description-title {
-	padding-top: 63px;
+	padding-top: 65px;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 }
 
 .description-text {
 	margin: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 	padding: 0px;
 	font-family: "PT Sans", Helvetica, sans-serif;
 }
@@ -1778,18 +1802,15 @@ a {
 	box-sizing: border-box;
 	width: 220px;
 	height: 63px;
-<<<<<<< HEAD
 	padding-top: 11px;
-=======
 	padding-top: 9px;
->>>>>>> parent of b702ec2... Revert "11"
 	padding-left: 5px;
 }
 
 .footer-text {
 	font-size: 18px;
 	line-height: 24px;
-	margin: 32px 0px 50px 0px;
+	margin: 33px 0px 50px 3px;
 }
 
 .footer-navigation ul {
@@ -1970,14 +1991,10 @@ a {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-<<<<<<< HEAD
 	z-index: 30;
-}
-=======
 	display: none;
 }
 
->>>>>>> parent of b702ec2... Revert "11"
 /*форма добавления товара*/
 .modal-add {
 	width: 620px;
@@ -2007,6 +2024,7 @@ a {
 .modal-btn {
 	margin-top: 65px;
 	background-color: #f1f1f1;
+	text-transform: uppercase;
 }
 
 .modal-buy-btn,
@@ -2036,11 +2054,8 @@ a {
 	width: 620px;
 	font-size: 18px;
 	line-height: 18px;
-<<<<<<< HEAD
-=======
 	width: 620px;
 	min-height: 430px;
->>>>>>> parent of b702ec2... Revert "11"
 	-webkit-box-shadow: inset  0px 5px 0 0 #ee3643;
 	box-shadow: inset  0px 5px 0 0 #ee3643;
 	background-color: #ffffff;
@@ -2101,6 +2116,8 @@ a {
 }
 
 .write-comment {
+	font-size: 13px;
+	line-height: 18px;
 	margin-top: 20px;
 	margin-right: 80px;
 	border: 2px solid #d7dcde;
@@ -2134,9 +2151,9 @@ a {
 }
 
 .modal-btn-wrapper {
+	position: absolute;
 	width: 620px;
 	background-color: #f4f4f4;
-	position: absolute;
 	top: 335px;
 	left: 0px;
 }
@@ -2151,9 +2168,8 @@ a {
 
 /*карта*/
 
-<<<<<<< HEAD
+
 .modal-show {
 	display: block;
 }
-=======
->>>>>>> parent of b702ec2... Revert "11"
+
