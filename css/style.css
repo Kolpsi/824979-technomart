@@ -564,26 +564,24 @@ a {
 	flex-grow: 1;
 }
 
-.site-navigation li:nth-of-type(1) a {
-	padding-left: 20px;
-}
-
-.site-navigation li:nth-of-type(2) a {
-	padding-left: 3px;
-}
-
-.site-navigation li:nth-of-type(3) a {
-	padding-left: 0px;
-}
-
-.site-navigation li:nth-of-type(7) a {
-	padding-right: 23px;
-}
 
 .site-navigation a {
 	display: block;
 	padding: 20px 0px 18px 0px;
 	text-align: center;
+}
+.nav-index a {
+	padding-left: 20px;
+}
+
+.nav-company a {
+	padding-left: 3px;
+}
+.nav-catalog a {
+	padding-left: 0px;
+}
+.nav-contacts a {
+	padding-right: 23px;
 }
 
 .site-navigation a[href]:hover,
