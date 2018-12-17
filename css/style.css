@@ -143,6 +143,13 @@ a {
 	margin-top: 13px;
 }
 
+.footer-img {
+	margin-top: 14px;
+	-webkit-transform: scaleY(1.23);
+	-ms-transform: scaleY(1.23);
+	transform: scaleY(1.23);
+}
+
 .main-menu .logo[href]:hover,
 .main-menu .logo[href]:focus,
 .footer-logo[href]:hover,
@@ -1922,7 +1929,6 @@ a {
 }
 
 .social-list {
-	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1931,12 +1937,12 @@ a {
 	justify-content: space-between;
 	margin: 0px;
 	margin-right: 40px;
+	margin-top: 35px;
 	width: 100px;
 
 }
 
 .social li {
-	margin-top: 35px;
 	margin-right: 10px;
 	background-color: #212a3a;
 	list-style: none;
