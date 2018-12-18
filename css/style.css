@@ -130,25 +130,22 @@ a {
 
 .logo {
 	width: 220px;
-	height: 42px;
 	text-align: center;
 	background-color: #ee3643;
-	-webkit-box-shadow: 0px 5px 0 0 rgba(181, 41, 51, 1);
-	-ms-box-shadow: 0px 5px 0 0 rgba(181, 41, 51, 1);
-	box-shadow: 0px 5px 0 0 rgba(181, 41, 51, 1);
+	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 
+}
+
+.header-logo {
+	box-shadow: 0px 5px 0 0 rgba(181, 41, 51, 1);
+	height: 42px;
 }
 
 .logo-img {
 	margin-top: 13px;
 }
 
-.footer-img {
-	margin-top: 14px;
-	-webkit-transform: scaleY(1.23);
-	-ms-transform: scaleY(1.23);
-	transform: scaleY(1.23);
-}
+
 
 .main-menu .logo[href]:hover,
 .main-menu .logo[href]:focus,
@@ -1604,7 +1601,7 @@ a {
 .catalog-box {
 	margin-left: 20px;
 	width: 700px;
-	margin-bottom: 14px;
+	margin-bottom: 13px;
 }
 
 .list-item {
@@ -1858,17 +1855,19 @@ a {
 	display: block;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 220px;
-	height: 63px;
-	padding-top: 11px;
-	padding-top: 9px;
-	padding-left: 5px;
+	padding: 20px 41px 25px;
+}
+
+.footer-logo svg {
+	display: block;
+	width: 138px;
+	height: 23px
 }
 
 .footer-text {
 	font-size: 18px;
 	line-height: 24px;
-	margin: 33px 0px 50px 3px;
+	margin: 27px 0px 50px 3px;
 }
 
 .footer-navigation ul {
