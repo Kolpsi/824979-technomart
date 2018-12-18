@@ -1928,6 +1928,7 @@ a {
 }
 
 .social-list {
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1942,6 +1943,7 @@ a {
 }
 
 .social li {
+	position: relative;
 	margin-right: 10px;
 	background-color: #212a3a;
 	list-style: none;
@@ -1949,7 +1951,7 @@ a {
 }
 
 .social-btn {
-	position: relative;
+
 	width: 42px;
 	height: 42px;
 }
