@@ -67,6 +67,8 @@ a {
 	background-color: transparent;
 	background-image: url("../img/icon-close.svg");
 	cursor: pointer;
+
+	z-index: 3;
 }
 
 .btn:hover,
@@ -2235,15 +2237,37 @@ a {
 	text-transform: uppercase;
 }
 
+.modal-map iframe {
+	position: relative;
+	z-index: 2;
+
+	border: none;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
 /*карта*/
-
-
 .modal-show {
 	display: block;
 
 	animation: bounce 0.6s;
 }
 
+.show-add {
+	display: block;
+	animation: fadein 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s
+}
 @keyframes bounce {
 	0% {
 		transform: translate(0, 0);
@@ -2255,18 +2279,40 @@ a {
 
 @keyframes fadein {
 	0% {
-		transform: scale(0);
+		transform: scale(0) translate(-50%, -50%);
 		opacity: 0.0;
 	}
 	60% {
-		transform: scale(1.1);
+		transform: scale(1.1) translate(-50%, -50%);
 	}
 	80% {
-		transform: scale(0.9);
+		transform: scale(0.9) translate(-50%, -50%);
 		opacity: 1;
 	}
 	100% {
-		transform: scale(1);
+		transform: scale(1) translate(-50%, -50%);
 		opacity: 1;
 	}
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-46%, -46%);;
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-56%, -56%);;
+  }
 }
