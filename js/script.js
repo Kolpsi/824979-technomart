@@ -47,7 +47,7 @@ if (storage) {
 
 form.addEventListener("submit", function (evt) {
 	evt.preventDefault();
-	if (!writeName.value || !writeEmail.value) {
+	if (!writeName.value || !writeEmail.value || !writeComment.value) {
 		evt.preventDefault();
 		popup.classList.remove("modal-error");
 		popup.offsetWidth = popup.offsetWidth;
