@@ -1,19 +1,24 @@
 var popup = document.querySelector(".modal-write");
 var butn = document.querySelector(".map-btn");
-var closewrite = popup.querySelector(".close-btn");
-var popupmap = document.querySelector(".modal-map");
-var closemap = popupmap.querySelector(".close-btn-map");
-var mapup = document.querySelector(".map-link");
-var buybtn = document.querySelectorAll(".buy-btn");
-var popupadd = document.querySelector(".modal-add");
-var closeadd = popupadd.querySelector(".close-btn");
-var nextbtn = popupadd.querySelector(".modal-next-btn");
+var closeWrite = popup.querySelector(".close-btn");
+var popupMap = document.querySelector(".modal-map");
+var closeMap = popupMap.querySelector(".close-btn-map");
+var mapUp = document.querySelector(".map-link");
+var buyBtns = document.querySelectorAll(".buy-btn");
+var bookmarksBtns = document.querySelectorAll(".item-bookmarks");
+var bookmarks = document.querySelector(".main-bookmarks")
+var basketMain = document.querySelector(".main-basket");
+var popupAdd = document.querySelector(".modal-add");
+var closeAdd = popupAdd.querySelector(".close-btn");
+var nextBtn = popupAdd.querySelector(".modal-next-btn");
 var writeName = popup.querySelector("[name=name]");
 var form = popup.querySelector("form");
 var writeEmail = popup.querySelector("[name=email]");
 var writeComment = popup.querySelector("[name=comment]");
 var isStorageSupport = true;
 var storage = "";
+var numbBasket = 1;
+var numbBookmarks = 1;
 
 try {
 	storage = localStorage.getItem("writeName");
@@ -62,47 +67,60 @@ window.addEventListener("keydown", function (evt) {
 		popup.classList.remove("modal-show");
 		popup.classList.remove("modal-error");
 		}
-	if (popupmap.classList.contains("modal-show")) {
-		popupmap.classList.remove("modal-show");
+	if (popupMap.classList.contains("modal-show")) {
+		popupMap.classList.remove("modal-show");
 		}
-	if (popupadd.classList.contains("show-add")) {
-		popupadd.classList.remove("show-add");
+	if (popupAdd.classList.contains("show-add")) {
+		popupAdd.classList.remove("show-add");
 		}
 	}
   });
 
-closewrite.addEventListener("click", function (evt) {
+closeWrite.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.remove("modal-show");
 	popup.classList.remove("modal-error");
 });
 
-mapup.addEventListener("click", function (evt) {
+mapUp.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popupmap.classList.add("modal-show");
+	popupMap.classList.add("modal-show");
 });
 
-closemap.addEventListener("click", function (evt) {
+closeMap.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popupmap.classList.remove("modal-show");
+	popupMap.classList.remove("modal-show");
 });
 
-for (var i = 0; i < buybtn.length; i++) {
-	var buybtn = buybtn[i];
-	console.log(buybtn);
-	buybtn.addEventListener("click", function (evt) {
+closeAdd.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popupAdd.classList.remove("show-add");
+});
+
+nextBtn.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popupAdd.classList.remove("show-add");
+});
+
+
+
+
+for (var i=0; i < bookmarksBtns.length; i++) {
+	var bookmarksBtn = bookmarksBtns[i];
+	bookmarksBtn.addEventListener("click", function(evt) {
 		evt.preventDefault();
-		popupadd.classList.add("show-add");
-	})
+		bookmarks.classList.add("basket-full");
+		bookmarks.textContent = "Закладки: "  + numbBookmarks++;
+	});
 };
 
-
-closeadd.addEventListener("click", function (evt) {
+for (var i = 0; i < buyBtns.length; i++) {
+	var buyBtn = buyBtns[i];
+	buyBtn.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popupadd.classList.remove("show-add");
+	popupAdd.classList.add("show-add");
+	basketMain.classList.add("basket-full");
+	basketMain.textContent = "Корзина: " + numbBasket++;
 });
+};
 
-nextbtn.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	popupadd.classList.remove("show-add");
-});

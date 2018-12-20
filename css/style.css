@@ -826,6 +826,12 @@ a {
 	background-color: #ee3643;
 }
 
+.slider-control label[for="product-1"]:focus,
+.slider-control label[for="product-2"]:focus,
+.slider-controlr label[for="product-1"]:hover,
+.slider-control label[for="product-2"]:hover {
+	outline: 1px solid #666;
+}
 
 .slide::before {
 	content: "";
