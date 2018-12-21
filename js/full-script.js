@@ -11,9 +11,9 @@ var basketMain = document.querySelector(".main-basket");
 var popupAdd = document.querySelector(".modal-add");
 var closeAdd = popupAdd.querySelector(".close-btn");
 var nextBtn = popupAdd.querySelector(".modal-next-btn");
-var writeName = document.querySelector("[name=name]");
-var form = document.querySelector("form");
-var writeEmail = document.querySelector("[name=email]");
+var writeName = document.querySelector(".write-name");
+var form = document.querySelector(".write-us");
+var writeEmail = document.querySelector(".write-email");
 var writeComment = document.querySelector("[name=comment]");
 var isStorageSupport = true;
 var storage = "";
@@ -28,21 +28,18 @@ try {
 	}
 
 if (butn) {
-butn.addEventListener("click", function (evt) {
-evt.preventDefault();
-popup.classList.add("modal-show");
+	butn.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popup.classList.add("modal-show");
+	writeName.focus();
 if (storage) {
 	writeName.value = storage;
 	writeEmail.focus();
-	} else {
-		writeName.focus();
 	}
 if (storage) {
 	writeName.value = storage;
 	writeEmail.value = storage;
 	writeComment.focus();
-	} else {
-		writeEmail.focus();
 	}
 });
 }
