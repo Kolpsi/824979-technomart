@@ -214,7 +214,7 @@ a {
 }
 
 .main-menu a[href]:active {
-	background-color: #161d29;
+	opacity: 0.6;
 }
 
 .main-bookmarks {
@@ -596,7 +596,7 @@ a {
 }
 
 .site-navigation a[href]:active {
-	background-color: #1d2739;
+	opacity: 0.6;
 }
 
 /*Лист предложений*/
@@ -1390,12 +1390,14 @@ a {
 
 .output-line {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 0px 10px;
 	margin: 0px;
 }
 
 .filter-output label {
 	display: inline-block;
+	vertical-align: middle;
 	width: 50%;
 	width: 90px;
 	font-size: 16px;
@@ -1501,7 +1503,14 @@ a {
 	background-repeat: no-repeat;
 }
 
+.filter-options input[type="radio"]:disabled + label::before {
+	opacity: 0.3;
+}
 
+.filter-options input[type="radio"]:hover + label::before {
+	background-image: url("../img/radio-on-hover.svg");
+	background-repeat: no-repeat;
+}
 
 /*сортировка в каталоге*/
 .sorting {
@@ -1804,6 +1813,7 @@ a {
 
 .paginator-btn {
 	display: inline-block;
+	vertical-align: middle;
 	border: 1px solid #e5e5e5;
 	width: 36px;
 	margin: 30px 7px 22px 0px;
@@ -1926,13 +1936,10 @@ a {
 	background-color: #293449;
 }
 
-.footer-column1 {
-	width: 240px;
-}
-
 .copyright {
 	margin-top: 35px;
 	margin-bottom: 35px;
+	width: 240px;
 }
 
 .social-list {
@@ -1950,7 +1957,7 @@ a {
 
 }
 
-.social li {
+.social-list li {
 	position: relative;
 	margin-right: 10px;
 	background-color: #212a3a;
@@ -2099,6 +2106,7 @@ a {
 .modal-buy-btn,
 .modal-next-btn {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 10px 0px;
 	width: 220px;
 	font-size: 14px;
