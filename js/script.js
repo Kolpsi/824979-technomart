@@ -6,7 +6,7 @@ var closeMap = document.querySelector(".close-btn-map");
 var mapUp = document.querySelector(".map-link");
 var buyBtns = document.querySelectorAll(".buy-btn");
 var bookmarksBtns = document.querySelectorAll(".item-bookmarks");
-var bookmarks = document.querySelector(".main-bookmarks")
+var bookmarks = document.querySelector(".main-bookmarks");
 var basketMain = document.querySelector(".main-basket");
 var popupAdd = document.querySelector(".modal-add");
 var closeAdd = popupAdd.querySelector(".close-btn");
@@ -47,34 +47,34 @@ if (storage) {
 if (form) {
 form.addEventListener("submit", function (evt) {
 	evt.preventDefault();
-	if (!writeName.value || !writeEmail.value || !writeComment.value) {
-		evt.preventDefault();
-		popup.classList.remove("modal-error");
-		popup.offsetWidth = popup.offsetWidth;
-		popup.classList.add("modal-error");
+if (!writeName.value || !writeEmail.value || !writeComment.value) {
+	evt.preventDefault();
+	popup.classList.remove("modal-error");
+	popup.offsetWidth = popup.offsetWidth;
+	popup.classList.add("modal-error");
 	} else {
-		if (isStorageSupport) {
-			localStorage.setItem("writeName", writeName.value);
-			localStorage.setItem("writeEmail", writeEmail.value);
+if (isStorageSupport) {
+	localStorage.setItem("writeName", writeName.value);
+	localStorage.setItem("writeEmail", writeEmail.value);
 		}
 	}
 });
 }
 window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
-		evt.preventDefault();
-	if (popup.classList.contains("modal-show")) {
-		popup.classList.remove("modal-show");
-		popup.classList.remove("modal-error");
+if (evt.keyCode === 27) {
+	evt.preventDefault();
+if (popup.classList.contains("modal-show")) {
+	popup.classList.remove("modal-show");
+	popup.classList.remove("modal-error");
 		}
-	if (popupMap.classList.contains("modal-show")) {
-		popupMap.classList.remove("modal-show");
+if (popupMap.classList.contains("modal-show")) {
+	popupMap.classList.remove("modal-show");
 		}
-	if (popupAdd.classList.contains("show-add")) {
-		popupAdd.classList.remove("show-add");
+if (popupAdd.classList.contains("show-add")) {
+	popupAdd.classList.remove("show-add");
 		}
 	}
-  });
+});
 
 if (closeWrite) {
 closeWrite.addEventListener("click", function (evt) {
@@ -117,10 +117,10 @@ nextBtn.addEventListener("click", function (evt) {
 for (var i=0; i < bookmarksBtns.length; i++) {
 	var bookmarksBtn = bookmarksBtns[i];
 	bookmarksBtn.addEventListener("click", function(evt) {
-		evt.preventDefault();
-		bookmarks.classList.add("basket-full");
-		bookmarks.textContent = "Закладки: "  + numbBookmarks++;
-	});
+	evt.preventDefault();
+	bookmarks.classList.add("basket-full");
+	bookmarks.textContent = "Закладки: "  + numbBookmarks++;
+});
 };
 
 for (var i = 0; i < buyBtns.length; i++) {

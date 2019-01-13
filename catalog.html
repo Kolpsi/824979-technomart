@@ -5,8 +5,8 @@
 		<meta name="format-detection" content="telephone=no">
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style-min.css">
-	<title>Каталог</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Каталог</title>
 	</head>
 	<body>
 		<header class="main-header catalog-header">
@@ -14,7 +14,8 @@
 				<div class="main-menu">
 					<a class="logo header-logo" href="index.html"><img class="logo-img" src="img/logo.svg" alt="техномарт" width="111" height="18"></a>
 					<form method="get" action="https://echo.htmlacademy.ru">
-						<input type="search" name="search" class="search" placeholder="Поиск:">
+						<input type="search" name="search" class="search" placeholder="Поиск:" id="search">
+						<label for="search" class="visually-hidden">Поиск по сайту</label>
 					</form>
 					<a class="main-bookmarks" href="#">Закладки: 0</a>
 					<a class="main-basket basket-full" href="#">Корзина: 10</a>
@@ -59,6 +60,7 @@
 					<li class="breadcrumbs-current"><a>перфораторы</a></li>
 				</ul>
 				<h1 class="catalog-heading">перфораторы</h1>
+				<h2 class="visually-hidden">Каталог</h2>
 				<section class="catalog">
 					<form class="filter" method="post" action="https://echo.htmlacademy.ru">
 						<h3 class="filter-heading">фильтр:</h3>
@@ -122,7 +124,7 @@
 					<div class="catalog-box">
 						<div class="sorting">
 							<p class="sorting-title">сортировка:</p>
-							<a class="sorting-btn sorting-btn-1 sorting-btn-active" href="#">по цене</a>
+							<a class="sorting-btn-1 sorting-btn-active" href="#">по цене</a>
 							<a class="sorting-btn sorting-btn-2" href="#">по типу</a>
 							<a class="sorting-btn sorting-btn-3" href="#">по функционалу</a>
 							<a href="#" class="sorting-btn sorting-selector-1"><span class="visually-hidden">Сортировка по возрастанию</span></a>
@@ -229,7 +231,7 @@
 			<section class="description">
 				<div class="centering">
 					<h2 class="description-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-					<p class="description-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+					<p class="description-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.  <span class="description-span"> </span>&emsp; Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 				</div>
 			</section>
 		</main>
@@ -296,4 +298,4 @@
 		</section>
 		<script src="js/script-min.js" type="text/javascript"></script>
 	</body>
-	</html>
+</html>
