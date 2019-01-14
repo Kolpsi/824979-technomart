@@ -1,14 +1,6 @@
-html {
-	width: 100%;
-	height: 100%
-}
-
 body {
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
 	margin: 0;
-	overflow-x: hidden;
+	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -119,8 +111,8 @@ a {
 	flex-wrap: wrap;
 	width: 940px;
 	margin: 0 auto;
-	padding: 0 10px;
 	margin-bottom: 48px;
+	padding: 0 10px;
 	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
@@ -221,8 +213,8 @@ a {
 
 .main-bookmarks {
 	position: relative;
-	padding: 12px 0px 10px 44px;
-	width: 105px
+	width: 105px;
+	padding: 12px 0px 10px 44px
 }
 
 .main-bookmarks::before {
@@ -251,9 +243,9 @@ a {
 
 .main-basket {
 	position: relative;
+	width: 100px;
 	padding-left: 50px;
-	padding-top: 12px;
-	width: 100px
+	padding-top: 12px
 }
 
 .main-basket::before {
@@ -327,8 +319,8 @@ a {
 	box-sizing: border-box;
 	width: 200px;
 	margin: 0px;
-	padding: 0px;
 	margin-left: 53px;
+	padding: 0px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 23px;
@@ -384,9 +376,9 @@ a {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	list-style: none;
+	width: 300px;
 	margin: 0px;
 	padding: 0px;
-	width: 300px;
 	background-color: #ffffff
 }
 
@@ -445,9 +437,8 @@ a {
 	display: -ms-flexbox;
 	display: flex;
 	width: 280px;
-	padding: 0px;
 	margin: 0px;
-	margin-top: 0px;
+	padding: 0px;
 	list-style: none
 }
 
@@ -492,9 +483,9 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 120px;
+	margin-right: 10px;
 	padding: 10px;
 	padding-left: 46px;
-	margin-right: 10px;
 	background-color: #ffffff
 }
 
@@ -553,8 +544,8 @@ a {
 	justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
 	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
@@ -634,8 +625,8 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	min-height: 410px;
-	width: 620px
+	width: 620px;
+	min-height: 410px
 }
 
 .suggestion-wrapper1 {
@@ -654,8 +645,8 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	min-height: 410px;
-	width: 300px
+	width: 300px;
+	min-height: 410px
 }
 
 .suggestion-wrapper:nth-child(1) {
@@ -723,9 +714,9 @@ a {
 .suggestion-btn {
 	display: block;
 	width: 135px;
-	padding: 10px 0px;
 	margin-bottom: 22px;
 	margin-left: 25px;
+	padding: 10px 0px;
 	font-size: 14px;
 	line-height: 18px;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -863,9 +854,9 @@ a {
 }
 
 .title {
+	width: 400px;
 	margin: 0px;
 	padding: 30px 0px 30px 28px;
-	width: 400px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -959,7 +950,6 @@ a {
 }
 
 .service-title {
-	padding-top: 60px;
 	padding-top: 65px;
 	font-size: 30px;
 	line-height: 30px;
@@ -979,8 +969,8 @@ a {
 .service-list {
 	position: relative;
 	margin: 0px;
-	padding: 0px;
 	margin-top: 60px;
+	padding: 0px;
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: 700;
@@ -1033,19 +1023,15 @@ a {
 .service-slider {
 	position: relative;
 	width: 620px;
-	min-height: 343px;
-	overflow: hidden
+	min-height: 343px
 }
 
 .service-slider1,
 .service-slider2,
 .service-slider3 {
-	position: absolute;
-	top: 0px;
-	left: 0px;
 	display: none;
 	width: 620px;
-	min-height: 335px
+	min-height: 300px
 }
 
 #slide1:checked ~ .wrapper .service-slider .service-slider1,
@@ -1064,7 +1050,7 @@ a {
 .service-slider1 {
 	background-image: url("../img/delivery.png");
 	background-repeat: no-repeat;
-	background-position: 150px 80px
+	background-position: 150px 55px
 }
 
 .service-slider2 {
@@ -1084,8 +1070,8 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 195px;
-	padding: 10px 0px;
 	margin-top: 30px;
+	padding: 10px 0px;
 	text-transform: uppercase;
 	text-align: center
 }
@@ -1218,9 +1204,9 @@ a {
 }
 
 .map-text {
+	width: 180px;
 	margin: 0px;
 	margin-bottom: 30px;
-	width: 180px;
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 24px
@@ -1265,8 +1251,8 @@ a {
 
 .breadcrumbs li {
 	position: relative;
-	padding-left: 6px;
 	margin-right: 38px;
+	padding-left: 6px;
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -1391,8 +1377,8 @@ a {
 .output-line {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 0px 10px;
-	margin: 0px
+	margin: 0px;
+	padding: 0px 10px
 }
 
 .filter-output label {
@@ -1428,9 +1414,9 @@ a {
 }
 
 .filter-output input[type="text"] {
+	width: 90px;
 	padding: 10px 2px;
 	padding-left: 3px;
-	width: 90px;
 	font-family: "PT Sans", Helvetica, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
@@ -1441,8 +1427,8 @@ a {
 
 .filter-manufacturers,
 .filter-battery {
-	padding-left: 33px;
 	margin-top: 13px;
+	padding-left: 33px;
 	list-style: none;
 	font-size: 15px;
 	line-height: 20px
@@ -1899,9 +1885,12 @@ a {
 .description-text {
 	width: 920px;
 	margin: 0px;
-	margin-bottom: 28px;
 	padding: 0px;
 	font-family: "PT Sans", Helvetica, sans-serif
+}
+
+.description-text:last-of-type {
+	margin-bottom: 28px
 }
 
 .description-span {
@@ -2094,8 +2083,12 @@ a {
 }
 
 .feedback a {
-	margin-right: 52px;
+	margin-right: 0px;
 	color: #ffd180
+}
+
+.footer-column3 p:last-child {
+	margin-left: 45px;
 }
 
 .feedback a[href]:hover,
@@ -2156,8 +2149,8 @@ a {
 .modal-next-btn {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 10px 0px;
 	width: 220px;
+	padding: 10px 0px;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
@@ -2299,8 +2292,8 @@ a {
 
 .form-btn {
 	width: 460px;
-	padding: 10px 0px;
 	margin: 37px 80px 30px 80px;
+	padding: 10px 0px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: center;
