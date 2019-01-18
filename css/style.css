@@ -18,8 +18,8 @@ a {
 	width: 1px;
 	height: 1px;
 	margin: -1px;
-	border: 0;
 	padding: 0;
+	border: 0;
 	white-space: nowrap;
 	-webkit-clip-path: inset(100%);
 	clip-path: inset(100%);
@@ -155,15 +155,19 @@ a {
 }
 
 .main-menu input[type="search"] {
+	width: 270px;
+	padding: 11px 0px 10px 48px;
 	font: inherit;
 	line-height: 18px;
 	border: 0px;
-	width: 270px;
-	padding: 11px 0px 10px 48px;
 	background-color: #293449;
 	background-image: url("../img/icon-search1.svg");
 	background-repeat: no-repeat;
 	background-position: 17px 12px
+}
+
+.label-search {
+	font-size: 0
 }
 
 .main-menu  input::-webkit-input-placeholder {
@@ -218,12 +222,12 @@ a {
 }
 
 .main-bookmarks::before {
+	content: "";
 	position: absolute;
 	left: 16px;
 	top: 12px;
 	width: 20px;
 	height: 20px;
-	content: "";
 	background-image: url("../img/icon-bookmark.svg");
 	background-repeat: no-repeat;
 	opacity: 0.3
@@ -249,12 +253,12 @@ a {
 }
 
 .main-basket::before {
+	content: "";
 	position: absolute;
 	top: 12px;
 	left: 19px;
 	width: 20px;
 	height: 20px;
-	content: "";
 	background-image: url("../img/icon-cart.svg");
 	background-repeat: no-repeat;
 	opacity: 0.3
@@ -349,12 +353,12 @@ a {
 }
 
 .phone::before {
+	content: "";
 	position: absolute;
 	top: 10px;
 	left: 11px;
 	width: 18px;
 	height: 20px;
-	content: "";
 	background-image: url("../img/icon-phone.svg");
 	background-repeat: no-repeat
 }
@@ -392,12 +396,12 @@ a {
 }
 
 .profile-link::before {
+	content: "";
 	position: absolute;
 	top: 11px;
 	left: 13px;
 	width: 20px;
 	height: 20px;
-	content: "";
 	background-image: url("../img/icon-user.svg");
 	background-repeat: no-repeat;
 	opacity: 0.5
@@ -449,12 +453,12 @@ a {
 }
 
 .order::after {
+	content: "";
 	position: absolute;
 	top: 7px;
 	left: 89px;
 	width: 4px;
 	height: 4px;
-	content: "";
 	background-color: #32425c;
 	border-radius: 20px
 }
@@ -490,12 +494,12 @@ a {
 }
 
 .profile-login::before {
+	content: "";
 	position: absolute;
 	top: 12px;
 	left: 13px;
 	width: 20px;
 	height: 20px;
-	content: "";
 	background-image: url("../img/icon-login.svg");
 	background-repeat: no-repeat;
 	opacity: 0.1
@@ -832,10 +836,10 @@ a {
 }
 
 .slide-left {
+	content: "";
 	position: absolute;
 	top: 114px;
 	left: 25px;
-	content: "";
 	width: 25px;
 	height: 45px;
 	background-image: url("../img/icon-left.svg");
@@ -843,10 +847,10 @@ a {
 }
 
 .slide-right {
+	content: "";
 	position: absolute;
 	top: 114px;
 	right: 17px;
-	content: "";
 	width: 25px;
 	height: 45px;
 	background-image: url("../img/icon-right.svg");
@@ -980,10 +984,10 @@ a {
 }
 
 .service-list::before {
+	content: "";
 	position: absolute;
 	top: -50px;
 	right: 0px;
-	content: "";
 	width: 10px;
 	height: 280px;
 	background-image: url("../img/line.png");
@@ -1160,10 +1164,10 @@ a {
 }
 
 .about-list li::before {
+	content: "";
 	position: absolute;
 	top: 9px;
 	left: -35px;
-	content: "";
 	width: 25px;
 	height: 2px;
 	background-color: #ee3643
@@ -1266,10 +1270,10 @@ a {
 }
 
 .breadcrumbs li:not(:first-child)::before {
+	content: "";
 	position: absolute;
 	top: 3px;
 	left: -20px;
-	content: "";
 	width: 15px;
 	height: 15px;
 	background-image: url("../img/icon-right-small.svg");
@@ -1277,10 +1281,10 @@ a {
 }
 
 .breadcrumbs li:first-of-type::after {
+	content: "";
 	position: absolute;
 	top: 3px;
 	left: -2px;
-	content: "";
 	width: 15px;
 	height: 15px;
 	background-image: url("../img/icon-home.svg");
@@ -1458,12 +1462,12 @@ a {
 }
 
 .filter-options input[type="checkbox"] + label::before {
+	content: "";
 	position: absolute;
 	top: -2px;
 	left: -34px;
 	width: 25px;
 	height: 25px;
-	content: "";
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 	opacity: 0.7
@@ -1475,12 +1479,12 @@ a {
 }
 
 .filter-options input[type="radio"] + label::before {
+	content: "";
 	position: absolute;
 	top: -2px;
 	left: -36px;
 	width: 25px;
 	height: 25px;
-	content: "";
 	background-image: url("../img/radio-off.svg");
 	background-repeat: no-repeat;
 	opacity: 0.7
@@ -1687,10 +1691,10 @@ a {
 }
 
 .price-btn::after {
+	content: "";
 	position: absolute;
 	top: 0;
 	right: -20px;
-	content: "";
 	width: 0;
 	height: 0;
 	border: 19.4px solid white;
@@ -1729,10 +1733,10 @@ a {
 }
 
 .buy-btn::after {
+	content: "";
 	position: absolute;
 	top: 10px;
 	left: 12px;
-	content: "";
 	width: 20px;
 	height: 20px;
 	background-image: url("../img/buy-icon.svg");
@@ -1820,10 +1824,10 @@ a {
 }
 
 .flag-new::after {
+	content: "";
 	position: absolute;
 	top: -1px;
 	right: -1px;
-	content: "";
 	width: 60px;
 	height: 59px;
 	text-indent: -1000px;
@@ -2012,8 +2016,8 @@ a {
 }
 
 .social-vk::after {
-	position: absolute;
 	content: "";
+	position: absolute;
 	width: 42px;
 	height: 42px;
 	border-radius: 20px;
@@ -2024,8 +2028,8 @@ a {
 }
 
 .social-fb::after {
-	position: absolute;
 	content: "";
+	position: absolute;
 	width: 42px;
 	height: 42px;
 	border-radius: 20px;
@@ -2036,8 +2040,8 @@ a {
 }
 
 .social-inst::after {
-	position: absolute;
 	content: "";
+	position: absolute;
 	width: 42px;
 	height: 42px;
 	border-radius: 20px;
@@ -2088,7 +2092,7 @@ a {
 }
 
 .footer-column3 p:last-child {
-	margin-left: 45px;
+	margin-left: 45px
 }
 
 .feedback a[href]:hover,
@@ -2130,8 +2134,8 @@ a {
 }
 
 .modal-title::before {
-	position: absolute;
 	content: "";
+	position: absolute;
 	top: 55px;
 	left: 80px;
 	width: 66px;
